@@ -1,0 +1,651 @@
+{
+  "cmake_version": "3.31.6",
+  "data_sources": {
+    "cmake_cache": {
+      "found": true,
+      "interesting_variables": 55,
+      "parsed": true,
+      "variable_count": 215
+    },
+    "compile_commands": {
+      "entry_count": 37,
+      "found": true,
+      "observations": 133,
+      "parsed": true
+    }
+  },
+  "dependency_edges": [
+    {
+      "from": "infcover",
+      "kind": "internal",
+      "to": "zlibstatic"
+    },
+    {
+      "from": "minigzip",
+      "kind": "internal",
+      "to": "zlib"
+    },
+    {
+      "from": "static_minigzip",
+      "kind": "internal",
+      "to": "zlibstatic"
+    },
+    {
+      "from": "zlib_example",
+      "kind": "internal",
+      "to": "zlib"
+    },
+    {
+      "from": "zlib_example64",
+      "kind": "internal",
+      "to": "zlib"
+    },
+    {
+      "from": "zlib_static_example",
+      "kind": "internal",
+      "to": "zlibstatic"
+    },
+    {
+      "from": "zlib_static_example64",
+      "kind": "internal",
+      "to": "zlibstatic"
+    }
+  ],
+  "findings": [
+    {
+      "category": "platform_specific_library",
+      "field": "link_library",
+      "message": "Platform-specific or OS-dependent library: z",
+      "recommendation": "Wrap in platform checks (if(UNIX), if(APPLE), if(WIN32)) or use find_package(Threads), find_library(), etc.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "infcover",
+      "value": "../libz.a"
+    },
+    {
+      "category": "platform_specific_library",
+      "field": "link_library",
+      "message": "Platform-specific or OS-dependent library: z",
+      "recommendation": "Wrap in platform checks (if(UNIX), if(APPLE), if(WIN32)) or use find_package(Threads), find_library(), etc.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "static_minigzip",
+      "value": "../libz.a"
+    },
+    {
+      "category": "platform_specific_library",
+      "field": "link_library",
+      "message": "Platform-specific or OS-dependent library: z",
+      "recommendation": "Wrap in platform checks (if(UNIX), if(APPLE), if(WIN32)) or use find_package(Threads), find_library(), etc.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "zlib_static_example",
+      "value": "../libz.a"
+    },
+    {
+      "category": "platform_specific_library",
+      "field": "link_library",
+      "message": "Platform-specific or OS-dependent library: z",
+      "recommendation": "Wrap in platform checks (if(UNIX), if(APPLE), if(WIN32)) or use find_package(Threads), find_library(), etc.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "zlib_static_example64",
+      "value": "../libz.a"
+    },
+    {
+      "category": "compile_command",
+      "field": "compile_flag",
+      "message": "Non-portable compile flag in compile_commands.json: -fPIC",
+      "recommendation": "Check portability on all target platforms.",
+      "severity": "info",
+      "source": "compile_commands",
+      "target": "",
+      "value": "-fPIC"
+    },
+    {
+      "category": "absolute_path",
+      "field": "include_path",
+      "message": "Project-local include path in compile_commands.json: /home/user/workspace/real_cmake_projects/zlib",
+      "recommendation": "This path is within the project source or build tree and is expected.",
+      "severity": "info",
+      "source": "compile_commands",
+      "target": "",
+      "value": "/home/user/workspace/real_cmake_projects/zlib"
+    },
+    {
+      "category": "absolute_path",
+      "field": "include_path",
+      "message": "Project-local include path in compile_commands.json: /tmp/anaport_pmUgQo",
+      "recommendation": "This path is within the project source or build tree and is expected.",
+      "severity": "info",
+      "source": "compile_commands",
+      "target": "",
+      "value": "/tmp/anaport_pmUgQo"
+    },
+    {
+      "category": "cache_variable",
+      "field": "cmake_cache_variable",
+      "message": "Compiler: CMAKE_C_COMPILER = /usr/bin/cc",
+      "recommendation": "Ensure this compiler is available on all target build environments.",
+      "severity": "info",
+      "source": "cmake_cache",
+      "target": "",
+      "value": "CMAKE_C_COMPILER=/usr/bin/cc"
+    },
+    {
+      "category": "cache_variable",
+      "field": "cmake_cache_variable",
+      "message": "Install prefix: /usr/local",
+      "recommendation": "CMAKE_INSTALL_PREFIX is /usr/local. Ensure this is appropriate for all target environments.",
+      "severity": "info",
+      "source": "cmake_cache",
+      "target": "",
+      "value": "CMAKE_INSTALL_PREFIX=/usr/local"
+    },
+    {
+      "category": "absolute_path",
+      "field": "include_path",
+      "message": "Project-local absolute include path (resolved BUILD_INTERFACE): /home/user/workspace/real_cmake_projects/zlib",
+      "recommendation": "This is typical for BUILD_INTERFACE generator expressions and is generally fine. [9 targets: infcover, minigzip, static_minigzip, ...]",
+      "severity": "info",
+      "source": "file_api",
+      "target": "",
+      "value": "/home/user/workspace/real_cmake_projects/zlib"
+    },
+    {
+      "category": "runtime_path",
+      "field": "link_fragment",
+      "message": "Build-tree RPATH detected: -Wl,-rpath,/tmp/anaport_pmUgQo",
+      "recommendation": "This RPATH points inside the build/source directory and is typical for build-tree executables. Verify that CMAKE_INSTALL_RPATH is set correctly for installed binaries. [3 targets: minigzip, zlib_example, zlib_example64]",
+      "severity": "info",
+      "source": "file_api",
+      "target": "",
+      "value": "-Wl,-rpath,/tmp/anaport_pmUgQo"
+    },
+    {
+      "category": "absolute_path",
+      "field": "include_path",
+      "message": "Project-local absolute include path (resolved BUILD_INTERFACE): /tmp/anaport_pmUgQo",
+      "recommendation": "This is typical for BUILD_INTERFACE generator expressions and is generally fine. [9 targets: infcover, minigzip, static_minigzip, ...]",
+      "severity": "info",
+      "source": "file_api",
+      "target": "",
+      "value": "/tmp/anaport_pmUgQo"
+    }
+  ],
+  "generated_at": "2026-05-26T22:03:48Z",
+  "project_name": "zlib",
+  "source_dir": "/home/user/workspace/real_cmake_projects/zlib",
+  "summary": {
+    "dependency_edges": 7,
+    "emitted_findings": 12,
+    "errors": 0,
+    "findings_by_category": {
+      "absolute_path": 4,
+      "cache_variable": 2,
+      "compile_command": 1,
+      "platform_specific_library": 4,
+      "runtime_path": 1
+    },
+    "findings_by_source": {
+      "cmake_cache": 2,
+      "compile_commands": 3,
+      "file_api": 7
+    },
+    "hidden_service_targets": 0,
+    "info": 8,
+    "severity_filter": "info",
+    "total_findings": 12,
+    "total_targets": 9,
+    "warnings": 4
+  },
+  "targets": [
+    {
+      "artifacts": [
+        "test/infcover"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "_LARGEFILE64_SOURCE=1"
+          ],
+          "includes": [
+            {
+              "is_system": false,
+              "path": "/tmp/anaport_pmUgQo"
+            },
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/real_cmake_projects/zlib"
+            }
+          ],
+          "language": "C"
+        }
+      ],
+      "dependencies": [
+        "zlibstatic::@6890427a1f51a3e7e1df"
+      ],
+      "id": "infcover::@36f028580bb02cc8272a",
+      "link_fragments": [
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "-coverage",
+          "role": "flags"
+        },
+        {
+          "fragment": "../libz.a",
+          "role": "libraries"
+        }
+      ],
+      "name": "infcover",
+      "source_dir": "test",
+      "sources": [
+        "test/infcover.c"
+      ],
+      "type": "EXECUTABLE"
+    },
+    {
+      "artifacts": [
+        "test/minigzip"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "_LARGEFILE64_SOURCE=1"
+          ],
+          "includes": [
+            {
+              "is_system": false,
+              "path": "/tmp/anaport_pmUgQo"
+            },
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/real_cmake_projects/zlib"
+            }
+          ],
+          "language": "C"
+        }
+      ],
+      "dependencies": [
+        "zlib::@6890427a1f51a3e7e1df"
+      ],
+      "id": "minigzip::@36f028580bb02cc8272a",
+      "link_fragments": [
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "-Wl,-rpath,/tmp/anaport_pmUgQo",
+          "role": "libraries"
+        },
+        {
+          "fragment": "../libz.so.1.3.2.1",
+          "role": "libraries"
+        }
+      ],
+      "name": "minigzip",
+      "source_dir": "test",
+      "sources": [
+        "test/minigzip.c"
+      ],
+      "type": "EXECUTABLE"
+    },
+    {
+      "artifacts": [
+        "test/static_minigzip"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "_LARGEFILE64_SOURCE=1"
+          ],
+          "includes": [
+            {
+              "is_system": false,
+              "path": "/tmp/anaport_pmUgQo"
+            },
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/real_cmake_projects/zlib"
+            }
+          ],
+          "language": "C"
+        }
+      ],
+      "dependencies": [
+        "zlibstatic::@6890427a1f51a3e7e1df"
+      ],
+      "id": "static_minigzip::@36f028580bb02cc8272a",
+      "link_fragments": [
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "../libz.a",
+          "role": "libraries"
+        }
+      ],
+      "name": "static_minigzip",
+      "source_dir": "test",
+      "sources": [
+        "test/minigzip.c"
+      ],
+      "type": "EXECUTABLE"
+    },
+    {
+      "artifacts": [
+        "libz.so"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "NO_FSEEKO",
+            "ZLIB_BUILD",
+            "ZLIB_DLL",
+            "_LARGEFILE64_SOURCE=1"
+          ],
+          "includes": [
+            {
+              "is_system": false,
+              "path": "/tmp/anaport_pmUgQo"
+            },
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/real_cmake_projects/zlib"
+            }
+          ],
+          "language": "C"
+        }
+      ],
+      "dependencies": [],
+      "id": "zlib::@6890427a1f51a3e7e1df",
+      "link_fragments": [
+        {
+          "fragment": "-Wl,--version-script,\"/home/user/workspace/real_cmake_projects/zlib/zlib.map\"",
+          "role": "flags"
+        }
+      ],
+      "name": "zlib",
+      "source_dir": ".",
+      "sources": [
+        "adler32.c",
+        "compress.c",
+        "crc32.c",
+        "deflate.c",
+        "gzclose.c",
+        "gzlib.c",
+        "gzread.c",
+        "gzwrite.c",
+        "inflate.c",
+        "infback.c",
+        "inftrees.c",
+        "inffast.c",
+        "trees.c",
+        "uncompr.c",
+        "zutil.c",
+        "/tmp/anaport_pmUgQo/zconf.h",
+        "zlib.h",
+        "crc32.h",
+        "deflate.h",
+        "gzguts.h",
+        "inffast.h",
+        "inffixed.h",
+        "inflate.h",
+        "inftrees.h",
+        "trees.h",
+        "zutil.h"
+      ],
+      "type": "SHARED_LIBRARY"
+    },
+    {
+      "artifacts": [
+        "test/zlib_example"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "ZLIB_BUILD",
+            "_LARGEFILE64_SOURCE=1"
+          ],
+          "includes": [
+            {
+              "is_system": false,
+              "path": "/tmp/anaport_pmUgQo"
+            },
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/real_cmake_projects/zlib"
+            }
+          ],
+          "language": "C"
+        }
+      ],
+      "dependencies": [
+        "zlib::@6890427a1f51a3e7e1df"
+      ],
+      "id": "zlib_example::@36f028580bb02cc8272a",
+      "link_fragments": [
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "-Wl,-rpath,/tmp/anaport_pmUgQo",
+          "role": "libraries"
+        },
+        {
+          "fragment": "../libz.so.1.3.2.1",
+          "role": "libraries"
+        }
+      ],
+      "name": "zlib_example",
+      "source_dir": "test",
+      "sources": [
+        "test/example.c"
+      ],
+      "type": "EXECUTABLE"
+    },
+    {
+      "artifacts": [
+        "test/zlib_example64"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "ZLIB_BUILD",
+            "_LARGEFILE64_SOURCE=1"
+          ],
+          "includes": [
+            {
+              "is_system": false,
+              "path": "/tmp/anaport_pmUgQo"
+            },
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/real_cmake_projects/zlib"
+            }
+          ],
+          "language": "C"
+        }
+      ],
+      "dependencies": [
+        "zlib::@6890427a1f51a3e7e1df"
+      ],
+      "id": "zlib_example64::@36f028580bb02cc8272a",
+      "link_fragments": [
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "-Wl,-rpath,/tmp/anaport_pmUgQo",
+          "role": "libraries"
+        },
+        {
+          "fragment": "../libz.so.1.3.2.1",
+          "role": "libraries"
+        }
+      ],
+      "name": "zlib_example64",
+      "source_dir": "test",
+      "sources": [
+        "test/example.c"
+      ],
+      "type": "EXECUTABLE"
+    },
+    {
+      "artifacts": [
+        "test/zlib_static_example"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "ZLIB_BUILD",
+            "_LARGEFILE64_SOURCE=1"
+          ],
+          "includes": [
+            {
+              "is_system": false,
+              "path": "/tmp/anaport_pmUgQo"
+            },
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/real_cmake_projects/zlib"
+            }
+          ],
+          "language": "C"
+        }
+      ],
+      "dependencies": [
+        "zlibstatic::@6890427a1f51a3e7e1df"
+      ],
+      "id": "zlib_static_example::@36f028580bb02cc8272a",
+      "link_fragments": [
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "../libz.a",
+          "role": "libraries"
+        }
+      ],
+      "name": "zlib_static_example",
+      "source_dir": "test",
+      "sources": [
+        "test/example.c"
+      ],
+      "type": "EXECUTABLE"
+    },
+    {
+      "artifacts": [
+        "test/zlib_static_example64"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "ZLIB_BUILD",
+            "_LARGEFILE64_SOURCE=1"
+          ],
+          "includes": [
+            {
+              "is_system": false,
+              "path": "/tmp/anaport_pmUgQo"
+            },
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/real_cmake_projects/zlib"
+            }
+          ],
+          "language": "C"
+        }
+      ],
+      "dependencies": [
+        "zlibstatic::@6890427a1f51a3e7e1df"
+      ],
+      "id": "zlib_static_example64::@36f028580bb02cc8272a",
+      "link_fragments": [
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "../libz.a",
+          "role": "libraries"
+        }
+      ],
+      "name": "zlib_static_example64",
+      "source_dir": "test",
+      "sources": [
+        "test/example.c"
+      ],
+      "type": "EXECUTABLE"
+    },
+    {
+      "artifacts": [
+        "libz.a"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "NO_FSEEKO",
+            "ZLIB_BUILD",
+            "_LARGEFILE64_SOURCE=1"
+          ],
+          "includes": [
+            {
+              "is_system": false,
+              "path": "/tmp/anaport_pmUgQo"
+            },
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/real_cmake_projects/zlib"
+            }
+          ],
+          "language": "C"
+        }
+      ],
+      "dependencies": [],
+      "id": "zlibstatic::@6890427a1f51a3e7e1df",
+      "link_fragments": [],
+      "name": "zlibstatic",
+      "source_dir": ".",
+      "sources": [
+        "adler32.c",
+        "compress.c",
+        "crc32.c",
+        "deflate.c",
+        "gzclose.c",
+        "gzlib.c",
+        "gzread.c",
+        "gzwrite.c",
+        "inflate.c",
+        "infback.c",
+        "inftrees.c",
+        "inffast.c",
+        "trees.c",
+        "uncompr.c",
+        "zutil.c",
+        "/tmp/anaport_pmUgQo/zconf.h",
+        "zlib.h",
+        "crc32.h",
+        "deflate.h",
+        "gzguts.h",
+        "inffast.h",
+        "inffixed.h",
+        "inflate.h",
+        "inftrees.h",
+        "trees.h",
+        "zutil.h"
+      ],
+      "type": "STATIC_LIBRARY"
+    }
+  ],
+  "tool": "analyze-portability",
+  "tool_version": "1.1.0"
+}

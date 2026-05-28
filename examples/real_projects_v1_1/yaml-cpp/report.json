@@ -1,0 +1,358 @@
+{
+  "cmake_version": "3.31.6",
+  "data_sources": {
+    "cmake_cache": {
+      "found": true,
+      "interesting_variables": 54,
+      "parsed": true,
+      "variable_count": 191
+    },
+    "compile_commands": {
+      "entry_count": 35,
+      "found": true,
+      "observations": 169,
+      "parsed": true
+    }
+  },
+  "dependency_edges": [
+    {
+      "from": "yaml-cpp-parse",
+      "kind": "internal",
+      "to": "yaml-cpp"
+    },
+    {
+      "from": "yaml-cpp-read",
+      "kind": "internal",
+      "to": "yaml-cpp"
+    },
+    {
+      "from": "yaml-cpp-sandbox",
+      "kind": "internal",
+      "to": "yaml-cpp"
+    }
+  ],
+  "findings": [
+    {
+      "category": "absolute_path",
+      "field": "include_path",
+      "message": "Project-local absolute include path (resolved BUILD_INTERFACE): /home/user/workspace/real_cmake_projects/yaml-cpp/src",
+      "recommendation": "This is typical for BUILD_INTERFACE generator expressions and is generally fine.",
+      "severity": "info",
+      "source": "file_api",
+      "target": "yaml-cpp",
+      "value": "/home/user/workspace/real_cmake_projects/yaml-cpp/src"
+    },
+    {
+      "category": "compile_command",
+      "field": "compile_flag",
+      "message": "Non-portable compile flag in compile_commands.json: -fPIC",
+      "recommendation": "Check portability on all target platforms.",
+      "severity": "info",
+      "source": "compile_commands",
+      "target": "",
+      "value": "-fPIC"
+    },
+    {
+      "category": "absolute_path",
+      "field": "include_path",
+      "message": "Project-local include path in compile_commands.json: /home/user/workspace/real_cmake_projects/yaml-cpp/include",
+      "recommendation": "This path is within the project source or build tree and is expected.",
+      "severity": "info",
+      "source": "compile_commands",
+      "target": "",
+      "value": "/home/user/workspace/real_cmake_projects/yaml-cpp/include"
+    },
+    {
+      "category": "absolute_path",
+      "field": "include_path",
+      "message": "Project-local include path in compile_commands.json: /home/user/workspace/real_cmake_projects/yaml-cpp/src",
+      "recommendation": "This path is within the project source or build tree and is expected.",
+      "severity": "info",
+      "source": "compile_commands",
+      "target": "",
+      "value": "/home/user/workspace/real_cmake_projects/yaml-cpp/src"
+    },
+    {
+      "category": "cache_variable",
+      "field": "cmake_cache_variable",
+      "message": "Compiler: CMAKE_CXX_COMPILER = /usr/bin/c++",
+      "recommendation": "Ensure this compiler is available on all target build environments.",
+      "severity": "info",
+      "source": "cmake_cache",
+      "target": "",
+      "value": "CMAKE_CXX_COMPILER=/usr/bin/c++"
+    },
+    {
+      "category": "cache_variable",
+      "field": "cmake_cache_variable",
+      "message": "Install prefix: /usr/local",
+      "recommendation": "CMAKE_INSTALL_PREFIX is /usr/local. Ensure this is appropriate for all target environments.",
+      "severity": "info",
+      "source": "cmake_cache",
+      "target": "",
+      "value": "CMAKE_INSTALL_PREFIX=/usr/local"
+    },
+    {
+      "category": "absolute_path",
+      "field": "include_path",
+      "message": "Project-local absolute include path (resolved BUILD_INTERFACE): /home/user/workspace/real_cmake_projects/yaml-cpp/include",
+      "recommendation": "This is typical for BUILD_INTERFACE generator expressions and is generally fine. [4 targets: yaml-cpp, yaml-cpp-parse, yaml-cpp-read, yaml-cpp-sandbox]",
+      "severity": "info",
+      "source": "file_api",
+      "target": "",
+      "value": "/home/user/workspace/real_cmake_projects/yaml-cpp/include"
+    }
+  ],
+  "generated_at": "2026-05-26T22:02:29Z",
+  "project_name": "YAML_CPP",
+  "source_dir": "/home/user/workspace/real_cmake_projects/yaml-cpp",
+  "summary": {
+    "dependency_edges": 3,
+    "emitted_findings": 7,
+    "errors": 0,
+    "findings_by_category": {
+      "absolute_path": 4,
+      "cache_variable": 2,
+      "compile_command": 1
+    },
+    "findings_by_source": {
+      "cmake_cache": 2,
+      "compile_commands": 3,
+      "file_api": 2
+    },
+    "hidden_service_target_names": [
+      "Continuous",
+      "ContinuousBuild",
+      "ContinuousConfigure",
+      "ContinuousCoverage",
+      "ContinuousMemCheck",
+      "ContinuousStart",
+      "ContinuousSubmit",
+      "ContinuousTest",
+      "ContinuousUpdate",
+      "Experimental",
+      "ExperimentalBuild",
+      "ExperimentalConfigure",
+      "ExperimentalCoverage",
+      "ExperimentalMemCheck",
+      "ExperimentalStart",
+      "ExperimentalSubmit",
+      "ExperimentalTest",
+      "ExperimentalUpdate",
+      "Nightly",
+      "NightlyBuild",
+      "NightlyConfigure",
+      "NightlyCoverage",
+      "NightlyMemCheck",
+      "NightlyMemoryCheck",
+      "NightlyStart",
+      "NightlySubmit",
+      "NightlyTest",
+      "NightlyUpdate"
+    ],
+    "hidden_service_targets": 28,
+    "info": 7,
+    "severity_filter": "info",
+    "total_findings": 7,
+    "total_targets": 5,
+    "warnings": 0
+  },
+  "targets": [
+    {
+      "artifacts": [],
+      "compile_groups": [],
+      "dependencies": [],
+      "id": "uninstall::@6890427a1f51a3e7e1df",
+      "link_fragments": [],
+      "name": "uninstall",
+      "source_dir": ".",
+      "sources": [
+        "/tmp/anaport_2Oq2Gu/CMakeFiles/uninstall",
+        "/tmp/anaport_2Oq2Gu/CMakeFiles/uninstall.rule"
+      ],
+      "type": "UTILITY"
+    },
+    {
+      "artifacts": [
+        "libyaml-cpp.a"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "YAML_CPP_STATIC_DEFINE"
+          ],
+          "includes": [
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/real_cmake_projects/yaml-cpp/include"
+            },
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/real_cmake_projects/yaml-cpp/src"
+            }
+          ],
+          "language": "CXX"
+        }
+      ],
+      "dependencies": [],
+      "id": "yaml-cpp::@6890427a1f51a3e7e1df",
+      "link_fragments": [],
+      "name": "yaml-cpp",
+      "source_dir": ".",
+      "sources": [
+        "src/contrib/graphbuilder.cpp",
+        "src/contrib/graphbuilderadapter.cpp",
+        "src/binary.cpp",
+        "src/convert.cpp",
+        "src/depthguard.cpp",
+        "src/directives.cpp",
+        "src/emit.cpp",
+        "src/emitfromevents.cpp",
+        "src/emitter.cpp",
+        "src/emitterstate.cpp",
+        "src/emitterutils.cpp",
+        "src/exceptions.cpp",
+        "src/exp.cpp",
+        "src/fptostring.cpp",
+        "src/memory.cpp",
+        "src/node.cpp",
+        "src/node_data.cpp",
+        "src/nodebuilder.cpp",
+        "src/nodeevents.cpp",
+        "src/null.cpp",
+        "src/ostream_wrapper.cpp",
+        "src/parse.cpp",
+        "src/parser.cpp",
+        "src/regex_yaml.cpp",
+        "src/scanner.cpp",
+        "src/scanscalar.cpp",
+        "src/scantag.cpp",
+        "src/scantoken.cpp",
+        "src/simplekey.cpp",
+        "src/singledocparser.cpp",
+        "src/stream.cpp",
+        "src/tag.cpp"
+      ],
+      "type": "STATIC_LIBRARY"
+    },
+    {
+      "artifacts": [
+        "util/parse"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "YAML_CPP_STATIC_DEFINE"
+          ],
+          "includes": [
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/real_cmake_projects/yaml-cpp/include"
+            }
+          ],
+          "language": "CXX"
+        }
+      ],
+      "dependencies": [
+        "yaml-cpp::@6890427a1f51a3e7e1df"
+      ],
+      "id": "yaml-cpp-parse::@5865449b717dd869d2cd",
+      "link_fragments": [
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "../libyaml-cpp.a",
+          "role": "libraries"
+        }
+      ],
+      "name": "yaml-cpp-parse",
+      "source_dir": "util",
+      "sources": [
+        "util/parse.cpp"
+      ],
+      "type": "EXECUTABLE"
+    },
+    {
+      "artifacts": [
+        "util/read"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "YAML_CPP_STATIC_DEFINE"
+          ],
+          "includes": [
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/real_cmake_projects/yaml-cpp/include"
+            }
+          ],
+          "language": "CXX"
+        }
+      ],
+      "dependencies": [
+        "yaml-cpp::@6890427a1f51a3e7e1df"
+      ],
+      "id": "yaml-cpp-read::@5865449b717dd869d2cd",
+      "link_fragments": [
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "../libyaml-cpp.a",
+          "role": "libraries"
+        }
+      ],
+      "name": "yaml-cpp-read",
+      "source_dir": "util",
+      "sources": [
+        "util/read.cpp"
+      ],
+      "type": "EXECUTABLE"
+    },
+    {
+      "artifacts": [
+        "util/sandbox"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "YAML_CPP_STATIC_DEFINE"
+          ],
+          "includes": [
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/real_cmake_projects/yaml-cpp/include"
+            }
+          ],
+          "language": "CXX"
+        }
+      ],
+      "dependencies": [
+        "yaml-cpp::@6890427a1f51a3e7e1df"
+      ],
+      "id": "yaml-cpp-sandbox::@5865449b717dd869d2cd",
+      "link_fragments": [
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "../libyaml-cpp.a",
+          "role": "libraries"
+        }
+      ],
+      "name": "yaml-cpp-sandbox",
+      "source_dir": "util",
+      "sources": [
+        "util/sandbox.cpp"
+      ],
+      "type": "EXECUTABLE"
+    }
+  ],
+  "tool": "analyze-portability",
+  "tool_version": "1.1.0"
+}

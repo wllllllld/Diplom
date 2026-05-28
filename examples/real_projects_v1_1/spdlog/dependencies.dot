@@ -1,0 +1,10 @@
+// analyze-portability: dependency graph for project 'spdlog'
+digraph dependencies {
+  graph [rankdir=LR, label="spdlog — Dependency Graph", fontsize=14];
+  node [shape=box, style=filled, fontname="Helvetica"];
+
+  "example" [label="example\n[EXECUTABLE]", fillcolor="lightblue"];
+  "spdlog" [label="spdlog\n[STATIC_LIBRARY]", fillcolor="lightgreen"];
+
+  "example" -> "spdlog";
+}

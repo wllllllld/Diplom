@@ -1,0 +1,15 @@
+// analyze-portability: dependency graph for project 'YAML_CPP'
+digraph dependencies {
+  graph [rankdir=LR, label="YAML_CPP — Dependency Graph", fontsize=14];
+  node [shape=box, style=filled, fontname="Helvetica"];
+
+  "uninstall" [label="uninstall\n[UTILITY]", fillcolor="lightgray"];
+  "yaml-cpp" [label="yaml-cpp\n[STATIC_LIBRARY]", fillcolor="lightgreen"];
+  "yaml-cpp-parse" [label="yaml-cpp-parse\n[EXECUTABLE]", fillcolor="lightblue"];
+  "yaml-cpp-read" [label="yaml-cpp-read\n[EXECUTABLE]", fillcolor="lightblue"];
+  "yaml-cpp-sandbox" [label="yaml-cpp-sandbox\n[EXECUTABLE]", fillcolor="lightblue"];
+
+  "yaml-cpp-parse" -> "yaml-cpp";
+  "yaml-cpp-read" -> "yaml-cpp";
+  "yaml-cpp-sandbox" -> "yaml-cpp";
+}

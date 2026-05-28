@@ -1,0 +1,207 @@
+{
+  "cmake_version": "3.31.6",
+  "dependency_edges": [
+    {
+      "from": "lib_b",
+      "kind": "internal",
+      "to": "lib_a"
+    },
+    {
+      "from": "multi_app",
+      "kind": "internal",
+      "to": "lib_a"
+    },
+    {
+      "from": "multi_app",
+      "kind": "internal",
+      "to": "lib_b"
+    }
+  ],
+  "findings": [
+    {
+      "category": "absolute_path",
+      "field": "include_path",
+      "message": "Project-local absolute include path (resolved BUILD_INTERFACE): /home/user/workspace/analyze-portability/tests/fixtures/test_multi_target/lib_a/include",
+      "recommendation": "This is typical for BUILD_INTERFACE generator expressions and is generally fine.",
+      "severity": "info",
+      "target": "lib_a",
+      "value": "/home/user/workspace/analyze-portability/tests/fixtures/test_multi_target/lib_a/include"
+    },
+    {
+      "category": "absolute_path",
+      "field": "include_path",
+      "message": "Project-local absolute include path (resolved BUILD_INTERFACE): /home/user/workspace/analyze-portability/tests/fixtures/test_multi_target/lib_b/include",
+      "recommendation": "This is typical for BUILD_INTERFACE generator expressions and is generally fine.",
+      "severity": "info",
+      "target": "lib_b",
+      "value": "/home/user/workspace/analyze-portability/tests/fixtures/test_multi_target/lib_b/include"
+    },
+    {
+      "category": "absolute_path",
+      "field": "include_path",
+      "message": "Project-local absolute include path (resolved BUILD_INTERFACE): /home/user/workspace/analyze-portability/tests/fixtures/test_multi_target/lib_a/include",
+      "recommendation": "This is typical for BUILD_INTERFACE generator expressions and is generally fine.",
+      "severity": "info",
+      "target": "lib_b",
+      "value": "/home/user/workspace/analyze-portability/tests/fixtures/test_multi_target/lib_a/include"
+    },
+    {
+      "category": "absolute_path",
+      "field": "include_path",
+      "message": "Project-local absolute include path (resolved BUILD_INTERFACE): /home/user/workspace/analyze-portability/tests/fixtures/test_multi_target/lib_b/include",
+      "recommendation": "This is typical for BUILD_INTERFACE generator expressions and is generally fine.",
+      "severity": "info",
+      "target": "multi_app",
+      "value": "/home/user/workspace/analyze-portability/tests/fixtures/test_multi_target/lib_b/include"
+    },
+    {
+      "category": "absolute_path",
+      "field": "include_path",
+      "message": "Project-local absolute include path (resolved BUILD_INTERFACE): /home/user/workspace/analyze-portability/tests/fixtures/test_multi_target/lib_a/include",
+      "recommendation": "This is typical for BUILD_INTERFACE generator expressions and is generally fine.",
+      "severity": "info",
+      "target": "multi_app",
+      "value": "/home/user/workspace/analyze-portability/tests/fixtures/test_multi_target/lib_a/include"
+    }
+  ],
+  "generated_at": "2026-05-17T22:51:09Z",
+  "project_name": "MultiTarget",
+  "source_dir": "/home/user/workspace/analyze-portability/tests/fixtures/test_multi_target",
+  "summary": {
+    "dependency_edges": 3,
+    "errors": 0,
+    "info": 5,
+    "total_findings": 5,
+    "total_targets": 3,
+    "warnings": 0
+  },
+  "targets": [
+    {
+      "artifacts": [
+        "lib_a/liblib_a.a"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "LIB_A_ENABLED=1"
+          ],
+          "includes": [
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/analyze-portability/tests/fixtures/test_multi_target/lib_a/include"
+            }
+          ],
+          "language": "CXX"
+        }
+      ],
+      "dependencies": [],
+      "id": "lib_a::@cf4c8dde7749121c1234",
+      "link_fragments": [],
+      "name": "lib_a",
+      "source_dir": "lib_a",
+      "sources": [
+        "lib_a/src/lib_a.cpp"
+      ],
+      "type": "STATIC_LIBRARY"
+    },
+    {
+      "artifacts": [
+        "lib_b/liblib_b.so"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "LIB_A_ENABLED=1",
+            "LIB_B_INTERNAL=1",
+            "lib_b_EXPORTS"
+          ],
+          "includes": [
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/analyze-portability/tests/fixtures/test_multi_target/lib_b/include"
+            },
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/analyze-portability/tests/fixtures/test_multi_target/lib_a/include"
+            }
+          ],
+          "language": "CXX"
+        }
+      ],
+      "dependencies": [
+        "lib_a::@cf4c8dde7749121c1234"
+      ],
+      "id": "lib_b::@d697b61b8bbfabcd17dc",
+      "link_fragments": [
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "../lib_a/liblib_a.a",
+          "role": "libraries"
+        }
+      ],
+      "name": "lib_b",
+      "source_dir": "lib_b",
+      "sources": [
+        "lib_b/src/lib_b.cpp"
+      ],
+      "type": "SHARED_LIBRARY"
+    },
+    {
+      "artifacts": [
+        "app/multi_app"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "LIB_A_ENABLED=1"
+          ],
+          "includes": [
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/analyze-portability/tests/fixtures/test_multi_target/lib_b/include"
+            },
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/analyze-portability/tests/fixtures/test_multi_target/lib_a/include"
+            }
+          ],
+          "language": "CXX"
+        }
+      ],
+      "dependencies": [
+        "lib_a::@cf4c8dde7749121c1234",
+        "lib_b::@d697b61b8bbfabcd17dc"
+      ],
+      "id": "multi_app::@5f5a17c01335469806cb",
+      "link_fragments": [
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "-Wl,-rpath,/tmp/anaport_XOr9gK/lib_b",
+          "role": "libraries"
+        },
+        {
+          "fragment": "../lib_b/liblib_b.so",
+          "role": "libraries"
+        },
+        {
+          "fragment": "../lib_a/liblib_a.a",
+          "role": "libraries"
+        }
+      ],
+      "name": "multi_app",
+      "source_dir": "app",
+      "sources": [
+        "app/src/main.cpp"
+      ],
+      "type": "EXECUTABLE"
+    }
+  ],
+  "tool": "analyze-portability",
+  "tool_version": "1.0.0"
+}

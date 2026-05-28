@@ -1,0 +1,8 @@
+// analyze-portability: dependency graph for project 'ProblematicPaths'
+digraph dependencies {
+  graph [rankdir=LR, label="ProblematicPaths — Dependency Graph", fontsize=14];
+  node [shape=box, style=filled, fontname="Helvetica"];
+
+  "problematic_app" [label="problematic_app\n[EXECUTABLE]\n⚠ 12 warnings", fillcolor="lightyellow"];
+
+}

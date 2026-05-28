@@ -1,0 +1,13 @@
+// analyze-portability: dependency graph for project 'MultiTarget'
+digraph dependencies {
+  graph [rankdir=LR, label="MultiTarget — Dependency Graph", fontsize=14];
+  node [shape=box, style=filled, fontname="Helvetica"];
+
+  "lib_a" [label="lib_a\n[STATIC_LIBRARY]", fillcolor="lightgreen"];
+  "lib_b" [label="lib_b\n[SHARED_LIBRARY]", fillcolor="lightyellow"];
+  "multi_app" [label="multi_app\n[EXECUTABLE]", fillcolor="lightblue"];
+
+  "lib_b" -> "lib_a";
+  "multi_app" -> "lib_a";
+  "multi_app" -> "lib_b";
+}

@@ -1,0 +1,164 @@
+{
+  "cmake_version": "3.31.6",
+  "dependency_edges": [
+    {
+      "from": "simple_app",
+      "kind": "internal",
+      "to": "mathlib"
+    },
+    {
+      "from": "simple_app",
+      "kind": "internal",
+      "to": "strutils"
+    }
+  ],
+  "findings": [
+    {
+      "category": "absolute_path",
+      "field": "include_path",
+      "message": "Project-local absolute include path (resolved BUILD_INTERFACE): /home/user/workspace/analyze-portability/tests/fixtures/test_simple_internal/include",
+      "recommendation": "This is typical for BUILD_INTERFACE generator expressions and is generally fine.",
+      "severity": "info",
+      "target": "mathlib",
+      "value": "/home/user/workspace/analyze-portability/tests/fixtures/test_simple_internal/include"
+    },
+    {
+      "category": "absolute_path",
+      "field": "include_path",
+      "message": "Project-local absolute include path (resolved BUILD_INTERFACE): /home/user/workspace/analyze-portability/tests/fixtures/test_simple_internal/include",
+      "recommendation": "This is typical for BUILD_INTERFACE generator expressions and is generally fine.",
+      "severity": "info",
+      "target": "simple_app",
+      "value": "/home/user/workspace/analyze-portability/tests/fixtures/test_simple_internal/include"
+    },
+    {
+      "category": "absolute_path",
+      "field": "include_path",
+      "message": "Project-local absolute include path (resolved BUILD_INTERFACE): /home/user/workspace/analyze-portability/tests/fixtures/test_simple_internal/include",
+      "recommendation": "This is typical for BUILD_INTERFACE generator expressions and is generally fine.",
+      "severity": "info",
+      "target": "strutils",
+      "value": "/home/user/workspace/analyze-portability/tests/fixtures/test_simple_internal/include"
+    }
+  ],
+  "generated_at": "2026-05-17T22:51:08Z",
+  "project_name": "SimpleInternal",
+  "source_dir": "/home/user/workspace/analyze-portability/tests/fixtures/test_simple_internal",
+  "summary": {
+    "dependency_edges": 2,
+    "errors": 0,
+    "info": 3,
+    "total_findings": 3,
+    "total_targets": 3,
+    "warnings": 0
+  },
+  "targets": [
+    {
+      "artifacts": [
+        "libmathlib.a"
+      ],
+      "compile_groups": [
+        {
+          "defines": [],
+          "includes": [
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/analyze-portability/tests/fixtures/test_simple_internal/include"
+            }
+          ],
+          "language": "CXX"
+        }
+      ],
+      "dependencies": [],
+      "id": "mathlib::@6890427a1f51a3e7e1df",
+      "link_fragments": [],
+      "name": "mathlib",
+      "source_dir": ".",
+      "sources": [
+        "src/mathlib.cpp"
+      ],
+      "type": "STATIC_LIBRARY"
+    },
+    {
+      "artifacts": [
+        "simple_app"
+      ],
+      "compile_groups": [
+        {
+          "defines": [],
+          "includes": [
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/analyze-portability/tests/fixtures/test_simple_internal/include"
+            }
+          ],
+          "language": "CXX"
+        }
+      ],
+      "dependencies": [
+        "mathlib::@6890427a1f51a3e7e1df",
+        "strutils::@6890427a1f51a3e7e1df"
+      ],
+      "id": "simple_app::@6890427a1f51a3e7e1df",
+      "link_fragments": [
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "-Wl,-rpath,/tmp/anaport_wfI6qI",
+          "role": "libraries"
+        },
+        {
+          "fragment": "libmathlib.a",
+          "role": "libraries"
+        },
+        {
+          "fragment": "libstrutils.so",
+          "role": "libraries"
+        }
+      ],
+      "name": "simple_app",
+      "source_dir": ".",
+      "sources": [
+        "src/main.cpp"
+      ],
+      "type": "EXECUTABLE"
+    },
+    {
+      "artifacts": [
+        "libstrutils.so"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "strutils_EXPORTS"
+          ],
+          "includes": [
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/analyze-portability/tests/fixtures/test_simple_internal/include"
+            }
+          ],
+          "language": "CXX"
+        }
+      ],
+      "dependencies": [],
+      "id": "strutils::@6890427a1f51a3e7e1df",
+      "link_fragments": [
+        {
+          "fragment": "",
+          "role": "flags"
+        }
+      ],
+      "name": "strutils",
+      "source_dir": ".",
+      "sources": [
+        "src/strutils.cpp"
+      ],
+      "type": "SHARED_LIBRARY"
+    }
+  ],
+  "tool": "analyze-portability",
+  "tool_version": "1.0.0"
+}

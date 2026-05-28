@@ -1,0 +1,7 @@
+// analyze-portability: configure FAILED — dependency graph unavailable
+// cmake exited with code 1
+// CMake File API reply was not produced.
+digraph dependencies {
+  graph [label="Configure Failed — no dependency data", fontsize=14];
+  // No targets or edges available (File API reply unavailable).
+}

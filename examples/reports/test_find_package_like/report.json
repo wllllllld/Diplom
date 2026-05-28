@@ -1,0 +1,114 @@
+{
+  "cmake_version": "3.31.6",
+  "dependency_edges": [
+    {
+      "from": "net_app",
+      "kind": "internal",
+      "to": "netlib"
+    }
+  ],
+  "findings": [
+    {
+      "category": "absolute_path",
+      "field": "include_path",
+      "message": "Project-local absolute include path (resolved BUILD_INTERFACE): /home/user/workspace/analyze-portability/tests/fixtures/test_find_package_like/include_external",
+      "recommendation": "This is typical for BUILD_INTERFACE generator expressions and is generally fine.",
+      "severity": "info",
+      "target": "net_app",
+      "value": "/home/user/workspace/analyze-portability/tests/fixtures/test_find_package_like/include_external"
+    },
+    {
+      "category": "absolute_path",
+      "field": "include_path",
+      "message": "Project-local absolute include path (resolved BUILD_INTERFACE): /home/user/workspace/analyze-portability/tests/fixtures/test_find_package_like/include_external",
+      "recommendation": "This is typical for BUILD_INTERFACE generator expressions and is generally fine.",
+      "severity": "info",
+      "target": "netlib",
+      "value": "/home/user/workspace/analyze-portability/tests/fixtures/test_find_package_like/include_external"
+    }
+  ],
+  "generated_at": "2026-05-17T22:51:09Z",
+  "project_name": "FindPackageLike",
+  "source_dir": "/home/user/workspace/analyze-portability/tests/fixtures/test_find_package_like",
+  "summary": {
+    "dependency_edges": 1,
+    "errors": 0,
+    "info": 2,
+    "total_findings": 2,
+    "total_targets": 2,
+    "warnings": 0
+  },
+  "targets": [
+    {
+      "artifacts": [
+        "net_app"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "EXTERNAL_LIB_ENABLED=1",
+            "EXTERNAL_LIB_VERSION=\"1.2.3\""
+          ],
+          "includes": [
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/analyze-portability/tests/fixtures/test_find_package_like/include_external"
+            }
+          ],
+          "language": "CXX"
+        }
+      ],
+      "dependencies": [
+        "netlib::@6890427a1f51a3e7e1df"
+      ],
+      "id": "net_app::@6890427a1f51a3e7e1df",
+      "link_fragments": [
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "libnetlib.a",
+          "role": "libraries"
+        }
+      ],
+      "name": "net_app",
+      "source_dir": ".",
+      "sources": [
+        "src/main.cpp"
+      ],
+      "type": "EXECUTABLE"
+    },
+    {
+      "artifacts": [
+        "libnetlib.a"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "EXTERNAL_LIB_ENABLED=1",
+            "EXTERNAL_LIB_VERSION=\"1.2.3\""
+          ],
+          "includes": [
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/analyze-portability/tests/fixtures/test_find_package_like/include_external"
+            }
+          ],
+          "language": "CXX"
+        }
+      ],
+      "dependencies": [],
+      "id": "netlib::@6890427a1f51a3e7e1df",
+      "link_fragments": [],
+      "name": "netlib",
+      "source_dir": ".",
+      "sources": [
+        "src/netlib.cpp"
+      ],
+      "type": "STATIC_LIBRARY"
+    }
+  ],
+  "tool": "analyze-portability",
+  "tool_version": "1.0.0"
+}

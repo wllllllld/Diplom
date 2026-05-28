@@ -1,0 +1,1755 @@
+{
+  "cmake_version": "3.31.6",
+  "data_sources": {
+    "cmake_cache": {
+      "found": true,
+      "interesting_variables": 54,
+      "parsed": true,
+      "variable_count": 203
+    },
+    "compile_commands": {
+      "entry_count": 23,
+      "found": true,
+      "observations": 117,
+      "parsed": true
+    }
+  },
+  "dependency_edges": [
+    {
+      "from": "cJSON_test",
+      "kind": "internal",
+      "to": "cjson"
+    },
+    {
+      "from": "check",
+      "kind": "internal",
+      "to": "print_number"
+    },
+    {
+      "from": "check",
+      "kind": "internal",
+      "to": "minify_tests"
+    },
+    {
+      "from": "check",
+      "kind": "internal",
+      "to": "parse_array"
+    },
+    {
+      "from": "check",
+      "kind": "internal",
+      "to": "cJSON_test"
+    },
+    {
+      "from": "check",
+      "kind": "internal",
+      "to": "parse_hex4"
+    },
+    {
+      "from": "check",
+      "kind": "internal",
+      "to": "cjson_add"
+    },
+    {
+      "from": "check",
+      "kind": "internal",
+      "to": "readme_examples"
+    },
+    {
+      "from": "check",
+      "kind": "internal",
+      "to": "parse_number"
+    },
+    {
+      "from": "check",
+      "kind": "internal",
+      "to": "parse_value"
+    },
+    {
+      "from": "check",
+      "kind": "internal",
+      "to": "parse_object"
+    },
+    {
+      "from": "check",
+      "kind": "internal",
+      "to": "print_string"
+    },
+    {
+      "from": "check",
+      "kind": "internal",
+      "to": "parse_with_opts"
+    },
+    {
+      "from": "check",
+      "kind": "internal",
+      "to": "compare_tests"
+    },
+    {
+      "from": "check",
+      "kind": "internal",
+      "to": "print_value"
+    },
+    {
+      "from": "check",
+      "kind": "internal",
+      "to": "misc_tests"
+    },
+    {
+      "from": "check",
+      "kind": "internal",
+      "to": "print_array"
+    },
+    {
+      "from": "check",
+      "kind": "internal",
+      "to": "print_object"
+    },
+    {
+      "from": "check",
+      "kind": "internal",
+      "to": "parse_string"
+    },
+    {
+      "from": "check",
+      "kind": "internal",
+      "to": "parse_examples"
+    },
+    {
+      "from": "cjson_add",
+      "kind": "internal",
+      "to": "unity"
+    },
+    {
+      "from": "cjson_add",
+      "kind": "internal",
+      "to": "cjson"
+    },
+    {
+      "from": "compare_tests",
+      "kind": "internal",
+      "to": "unity"
+    },
+    {
+      "from": "compare_tests",
+      "kind": "internal",
+      "to": "cjson"
+    },
+    {
+      "from": "fuzz_main",
+      "kind": "internal",
+      "to": "cjson"
+    },
+    {
+      "from": "minify_tests",
+      "kind": "internal",
+      "to": "unity"
+    },
+    {
+      "from": "minify_tests",
+      "kind": "internal",
+      "to": "cjson"
+    },
+    {
+      "from": "misc_tests",
+      "kind": "internal",
+      "to": "unity"
+    },
+    {
+      "from": "misc_tests",
+      "kind": "internal",
+      "to": "cjson"
+    },
+    {
+      "from": "parse_array",
+      "kind": "internal",
+      "to": "unity"
+    },
+    {
+      "from": "parse_array",
+      "kind": "internal",
+      "to": "cjson"
+    },
+    {
+      "from": "parse_examples",
+      "kind": "internal",
+      "to": "unity"
+    },
+    {
+      "from": "parse_examples",
+      "kind": "internal",
+      "to": "cjson"
+    },
+    {
+      "from": "parse_hex4",
+      "kind": "internal",
+      "to": "unity"
+    },
+    {
+      "from": "parse_hex4",
+      "kind": "internal",
+      "to": "cjson"
+    },
+    {
+      "from": "parse_number",
+      "kind": "internal",
+      "to": "unity"
+    },
+    {
+      "from": "parse_number",
+      "kind": "internal",
+      "to": "cjson"
+    },
+    {
+      "from": "parse_object",
+      "kind": "internal",
+      "to": "unity"
+    },
+    {
+      "from": "parse_object",
+      "kind": "internal",
+      "to": "cjson"
+    },
+    {
+      "from": "parse_string",
+      "kind": "internal",
+      "to": "unity"
+    },
+    {
+      "from": "parse_string",
+      "kind": "internal",
+      "to": "cjson"
+    },
+    {
+      "from": "parse_value",
+      "kind": "internal",
+      "to": "unity"
+    },
+    {
+      "from": "parse_value",
+      "kind": "internal",
+      "to": "cjson"
+    },
+    {
+      "from": "parse_with_opts",
+      "kind": "internal",
+      "to": "unity"
+    },
+    {
+      "from": "parse_with_opts",
+      "kind": "internal",
+      "to": "cjson"
+    },
+    {
+      "from": "print_array",
+      "kind": "internal",
+      "to": "unity"
+    },
+    {
+      "from": "print_array",
+      "kind": "internal",
+      "to": "cjson"
+    },
+    {
+      "from": "print_number",
+      "kind": "internal",
+      "to": "unity"
+    },
+    {
+      "from": "print_number",
+      "kind": "internal",
+      "to": "cjson"
+    },
+    {
+      "from": "print_object",
+      "kind": "internal",
+      "to": "unity"
+    },
+    {
+      "from": "print_object",
+      "kind": "internal",
+      "to": "cjson"
+    },
+    {
+      "from": "print_string",
+      "kind": "internal",
+      "to": "unity"
+    },
+    {
+      "from": "print_string",
+      "kind": "internal",
+      "to": "cjson"
+    },
+    {
+      "from": "print_value",
+      "kind": "internal",
+      "to": "unity"
+    },
+    {
+      "from": "print_value",
+      "kind": "internal",
+      "to": "cjson"
+    },
+    {
+      "from": "readme_examples",
+      "kind": "internal",
+      "to": "unity"
+    },
+    {
+      "from": "readme_examples",
+      "kind": "internal",
+      "to": "cjson"
+    }
+  ],
+  "findings": [
+    {
+      "category": "platform_specific_library",
+      "field": "link_library",
+      "message": "Platform-specific or OS-dependent library: m",
+      "recommendation": "Wrap in platform checks (if(UNIX), if(APPLE), if(WIN32)) or use find_package(Threads), find_library(), etc.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "cJSON_test",
+      "value": "-lm"
+    },
+    {
+      "category": "platform_specific_library",
+      "field": "link_library",
+      "message": "Platform-specific or OS-dependent library: m",
+      "recommendation": "Wrap in platform checks (if(UNIX), if(APPLE), if(WIN32)) or use find_package(Threads), find_library(), etc.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "cjson",
+      "value": "-lm"
+    },
+    {
+      "category": "platform_specific_library",
+      "field": "link_library",
+      "message": "Platform-specific or OS-dependent library: m",
+      "recommendation": "Wrap in platform checks (if(UNIX), if(APPLE), if(WIN32)) or use find_package(Threads), find_library(), etc.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "cjson_add",
+      "value": "-lm"
+    },
+    {
+      "category": "platform_specific_library",
+      "field": "link_library",
+      "message": "Platform-specific or OS-dependent library: m",
+      "recommendation": "Wrap in platform checks (if(UNIX), if(APPLE), if(WIN32)) or use find_package(Threads), find_library(), etc.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "compare_tests",
+      "value": "-lm"
+    },
+    {
+      "category": "platform_specific_library",
+      "field": "link_library",
+      "message": "Platform-specific or OS-dependent library: m",
+      "recommendation": "Wrap in platform checks (if(UNIX), if(APPLE), if(WIN32)) or use find_package(Threads), find_library(), etc.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "fuzz_main",
+      "value": "-lm"
+    },
+    {
+      "category": "platform_specific_library",
+      "field": "link_library",
+      "message": "Platform-specific or OS-dependent library: m",
+      "recommendation": "Wrap in platform checks (if(UNIX), if(APPLE), if(WIN32)) or use find_package(Threads), find_library(), etc.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "minify_tests",
+      "value": "-lm"
+    },
+    {
+      "category": "platform_specific_library",
+      "field": "link_library",
+      "message": "Platform-specific or OS-dependent library: m",
+      "recommendation": "Wrap in platform checks (if(UNIX), if(APPLE), if(WIN32)) or use find_package(Threads), find_library(), etc.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "misc_tests",
+      "value": "-lm"
+    },
+    {
+      "category": "platform_specific_library",
+      "field": "link_library",
+      "message": "Platform-specific or OS-dependent library: m",
+      "recommendation": "Wrap in platform checks (if(UNIX), if(APPLE), if(WIN32)) or use find_package(Threads), find_library(), etc.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "parse_array",
+      "value": "-lm"
+    },
+    {
+      "category": "platform_specific_library",
+      "field": "link_library",
+      "message": "Platform-specific or OS-dependent library: m",
+      "recommendation": "Wrap in platform checks (if(UNIX), if(APPLE), if(WIN32)) or use find_package(Threads), find_library(), etc.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "parse_examples",
+      "value": "-lm"
+    },
+    {
+      "category": "platform_specific_library",
+      "field": "link_library",
+      "message": "Platform-specific or OS-dependent library: m",
+      "recommendation": "Wrap in platform checks (if(UNIX), if(APPLE), if(WIN32)) or use find_package(Threads), find_library(), etc.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "parse_hex4",
+      "value": "-lm"
+    },
+    {
+      "category": "platform_specific_library",
+      "field": "link_library",
+      "message": "Platform-specific or OS-dependent library: m",
+      "recommendation": "Wrap in platform checks (if(UNIX), if(APPLE), if(WIN32)) or use find_package(Threads), find_library(), etc.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "parse_number",
+      "value": "-lm"
+    },
+    {
+      "category": "platform_specific_library",
+      "field": "link_library",
+      "message": "Platform-specific or OS-dependent library: m",
+      "recommendation": "Wrap in platform checks (if(UNIX), if(APPLE), if(WIN32)) or use find_package(Threads), find_library(), etc.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "parse_object",
+      "value": "-lm"
+    },
+    {
+      "category": "platform_specific_library",
+      "field": "link_library",
+      "message": "Platform-specific or OS-dependent library: m",
+      "recommendation": "Wrap in platform checks (if(UNIX), if(APPLE), if(WIN32)) or use find_package(Threads), find_library(), etc.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "parse_string",
+      "value": "-lm"
+    },
+    {
+      "category": "platform_specific_library",
+      "field": "link_library",
+      "message": "Platform-specific or OS-dependent library: m",
+      "recommendation": "Wrap in platform checks (if(UNIX), if(APPLE), if(WIN32)) or use find_package(Threads), find_library(), etc.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "parse_value",
+      "value": "-lm"
+    },
+    {
+      "category": "platform_specific_library",
+      "field": "link_library",
+      "message": "Platform-specific or OS-dependent library: m",
+      "recommendation": "Wrap in platform checks (if(UNIX), if(APPLE), if(WIN32)) or use find_package(Threads), find_library(), etc.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "parse_with_opts",
+      "value": "-lm"
+    },
+    {
+      "category": "platform_specific_library",
+      "field": "link_library",
+      "message": "Platform-specific or OS-dependent library: m",
+      "recommendation": "Wrap in platform checks (if(UNIX), if(APPLE), if(WIN32)) or use find_package(Threads), find_library(), etc.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "print_array",
+      "value": "-lm"
+    },
+    {
+      "category": "platform_specific_library",
+      "field": "link_library",
+      "message": "Platform-specific or OS-dependent library: m",
+      "recommendation": "Wrap in platform checks (if(UNIX), if(APPLE), if(WIN32)) or use find_package(Threads), find_library(), etc.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "print_number",
+      "value": "-lm"
+    },
+    {
+      "category": "platform_specific_library",
+      "field": "link_library",
+      "message": "Platform-specific or OS-dependent library: m",
+      "recommendation": "Wrap in platform checks (if(UNIX), if(APPLE), if(WIN32)) or use find_package(Threads), find_library(), etc.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "print_object",
+      "value": "-lm"
+    },
+    {
+      "category": "platform_specific_library",
+      "field": "link_library",
+      "message": "Platform-specific or OS-dependent library: m",
+      "recommendation": "Wrap in platform checks (if(UNIX), if(APPLE), if(WIN32)) or use find_package(Threads), find_library(), etc.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "print_string",
+      "value": "-lm"
+    },
+    {
+      "category": "platform_specific_library",
+      "field": "link_library",
+      "message": "Platform-specific or OS-dependent library: m",
+      "recommendation": "Wrap in platform checks (if(UNIX), if(APPLE), if(WIN32)) or use find_package(Threads), find_library(), etc.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "print_value",
+      "value": "-lm"
+    },
+    {
+      "category": "platform_specific_library",
+      "field": "link_library",
+      "message": "Platform-specific or OS-dependent library: m",
+      "recommendation": "Wrap in platform checks (if(UNIX), if(APPLE), if(WIN32)) or use find_package(Threads), find_library(), etc.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "readme_examples",
+      "value": "-lm"
+    },
+    {
+      "category": "compile_command",
+      "field": "compile_flag",
+      "message": "Non-portable compile flag in compile_commands.json: -fPIC",
+      "recommendation": "Check portability on all target platforms.",
+      "severity": "info",
+      "source": "compile_commands",
+      "target": "",
+      "value": "-fPIC"
+    },
+    {
+      "category": "compile_command",
+      "field": "compile_flag",
+      "message": "Non-portable compile flag in compile_commands.json: -fstack-protector-strong",
+      "recommendation": "Check portability on all target platforms.",
+      "severity": "info",
+      "source": "compile_commands",
+      "target": "",
+      "value": "-fstack-protector-strong"
+    },
+    {
+      "category": "cache_variable",
+      "field": "cmake_cache_variable",
+      "message": "Compiler: CMAKE_C_COMPILER = /usr/bin/cc",
+      "recommendation": "Ensure this compiler is available on all target build environments.",
+      "severity": "info",
+      "source": "cmake_cache",
+      "target": "",
+      "value": "CMAKE_C_COMPILER=/usr/bin/cc"
+    },
+    {
+      "category": "cache_variable",
+      "field": "cmake_cache_variable",
+      "message": "Install prefix: /usr/local",
+      "recommendation": "CMAKE_INSTALL_PREFIX is /usr/local. Ensure this is appropriate for all target environments.",
+      "severity": "info",
+      "source": "cmake_cache",
+      "target": "",
+      "value": "CMAKE_INSTALL_PREFIX=/usr/local"
+    },
+    {
+      "category": "runtime_path",
+      "field": "link_fragment",
+      "message": "Build-tree RPATH detected: -Wl,-rpath,/tmp/anaport_IoCkSE",
+      "recommendation": "This RPATH points inside the build/source directory and is typical for build-tree executables. Verify that CMAKE_INSTALL_RPATH is set correctly for installed binaries. [20 targets: cJSON_test, cjson_add, compare_tests, ...]",
+      "severity": "info",
+      "source": "file_api",
+      "target": "",
+      "value": "-Wl,-rpath,/tmp/anaport_IoCkSE"
+    }
+  ],
+  "generated_at": "2026-05-26T22:02:27Z",
+  "project_name": "cJSON",
+  "source_dir": "/home/user/workspace/real_cmake_projects/cJSON",
+  "summary": {
+    "dependency_edges": 57,
+    "emitted_findings": 26,
+    "errors": 0,
+    "findings_by_category": {
+      "cache_variable": 2,
+      "compile_command": 2,
+      "platform_specific_library": 21,
+      "runtime_path": 1
+    },
+    "findings_by_source": {
+      "cmake_cache": 2,
+      "compile_commands": 2,
+      "file_api": 22
+    },
+    "hidden_service_targets": 0,
+    "info": 5,
+    "severity_filter": "info",
+    "total_findings": 26,
+    "total_targets": 24,
+    "warnings": 21
+  },
+  "targets": [
+    {
+      "artifacts": [
+        "cJSON_test"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "CJSON_API_VISIBILITY",
+            "CJSON_EXPORT_SYMBOLS",
+            "ENABLE_LOCALES"
+          ],
+          "includes": [],
+          "language": "C"
+        }
+      ],
+      "dependencies": [
+        "cjson::@6890427a1f51a3e7e1df"
+      ],
+      "id": "cJSON_test::@6890427a1f51a3e7e1df",
+      "link_fragments": [
+        {
+          "fragment": "-std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wmissing-variable-declarations -Wswitch-enum -fvisibility=hidden",
+          "role": "flags"
+        },
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "-Wl,-rpath,/tmp/anaport_IoCkSE",
+          "role": "libraries"
+        },
+        {
+          "fragment": "libcjson.so.1.7.19",
+          "role": "libraries"
+        },
+        {
+          "fragment": "-lm",
+          "role": "libraries"
+        }
+      ],
+      "name": "cJSON_test",
+      "source_dir": ".",
+      "sources": [
+        "test.c"
+      ],
+      "type": "EXECUTABLE"
+    },
+    {
+      "artifacts": [],
+      "compile_groups": [],
+      "dependencies": [
+        "print_number::@a44f0ac069e85531cdee",
+        "minify_tests::@a44f0ac069e85531cdee",
+        "parse_array::@a44f0ac069e85531cdee",
+        "cJSON_test::@6890427a1f51a3e7e1df",
+        "parse_hex4::@a44f0ac069e85531cdee",
+        "cjson_add::@a44f0ac069e85531cdee",
+        "readme_examples::@a44f0ac069e85531cdee",
+        "parse_number::@a44f0ac069e85531cdee",
+        "parse_value::@a44f0ac069e85531cdee",
+        "parse_object::@a44f0ac069e85531cdee",
+        "print_string::@a44f0ac069e85531cdee",
+        "parse_with_opts::@a44f0ac069e85531cdee",
+        "compare_tests::@a44f0ac069e85531cdee",
+        "print_value::@a44f0ac069e85531cdee",
+        "misc_tests::@a44f0ac069e85531cdee",
+        "print_array::@a44f0ac069e85531cdee",
+        "print_object::@a44f0ac069e85531cdee",
+        "parse_string::@a44f0ac069e85531cdee",
+        "parse_examples::@a44f0ac069e85531cdee"
+      ],
+      "id": "check::@6890427a1f51a3e7e1df",
+      "link_fragments": [],
+      "name": "check",
+      "source_dir": ".",
+      "sources": [
+        "/tmp/anaport_IoCkSE/CMakeFiles/check",
+        "/tmp/anaport_IoCkSE/CMakeFiles/check.rule"
+      ],
+      "type": "UTILITY"
+    },
+    {
+      "artifacts": [
+        "libcjson.so"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "CJSON_API_VISIBILITY",
+            "CJSON_EXPORT_SYMBOLS",
+            "ENABLE_LOCALES",
+            "cjson_EXPORTS"
+          ],
+          "includes": [],
+          "language": "C"
+        }
+      ],
+      "dependencies": [],
+      "id": "cjson::@6890427a1f51a3e7e1df",
+      "link_fragments": [
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "-lm",
+          "role": "libraries"
+        }
+      ],
+      "name": "cjson",
+      "source_dir": ".",
+      "sources": [
+        "cJSON.h",
+        "cJSON.c"
+      ],
+      "type": "SHARED_LIBRARY"
+    },
+    {
+      "artifacts": [
+        "tests/cjson_add"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "CJSON_API_VISIBILITY",
+            "CJSON_EXPORT_SYMBOLS",
+            "ENABLE_LOCALES"
+          ],
+          "includes": [],
+          "language": "C"
+        }
+      ],
+      "dependencies": [
+        "unity::@a44f0ac069e85531cdee",
+        "cjson::@6890427a1f51a3e7e1df"
+      ],
+      "id": "cjson_add::@a44f0ac069e85531cdee",
+      "link_fragments": [
+        {
+          "fragment": "-std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wmissing-variable-declarations -Wswitch-enum -fvisibility=hidden",
+          "role": "flags"
+        },
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "-Wl,-rpath,/tmp/anaport_IoCkSE",
+          "role": "libraries"
+        },
+        {
+          "fragment": "../libcjson.so.1.7.19",
+          "role": "libraries"
+        },
+        {
+          "fragment": "libunity.a",
+          "role": "libraries"
+        },
+        {
+          "fragment": "-lm",
+          "role": "libraries"
+        }
+      ],
+      "name": "cjson_add",
+      "source_dir": "tests",
+      "sources": [
+        "tests/cjson_add.c"
+      ],
+      "type": "EXECUTABLE"
+    },
+    {
+      "artifacts": [
+        "tests/compare_tests"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "CJSON_API_VISIBILITY",
+            "CJSON_EXPORT_SYMBOLS",
+            "ENABLE_LOCALES"
+          ],
+          "includes": [],
+          "language": "C"
+        }
+      ],
+      "dependencies": [
+        "unity::@a44f0ac069e85531cdee",
+        "cjson::@6890427a1f51a3e7e1df"
+      ],
+      "id": "compare_tests::@a44f0ac069e85531cdee",
+      "link_fragments": [
+        {
+          "fragment": "-std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wmissing-variable-declarations -Wswitch-enum -fvisibility=hidden",
+          "role": "flags"
+        },
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "-Wl,-rpath,/tmp/anaport_IoCkSE",
+          "role": "libraries"
+        },
+        {
+          "fragment": "../libcjson.so.1.7.19",
+          "role": "libraries"
+        },
+        {
+          "fragment": "libunity.a",
+          "role": "libraries"
+        },
+        {
+          "fragment": "-lm",
+          "role": "libraries"
+        }
+      ],
+      "name": "compare_tests",
+      "source_dir": "tests",
+      "sources": [
+        "tests/compare_tests.c"
+      ],
+      "type": "EXECUTABLE"
+    },
+    {
+      "artifacts": [
+        "fuzzing/fuzz_main"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "CJSON_API_VISIBILITY",
+            "CJSON_EXPORT_SYMBOLS",
+            "ENABLE_LOCALES"
+          ],
+          "includes": [],
+          "language": "C"
+        }
+      ],
+      "dependencies": [
+        "cjson::@6890427a1f51a3e7e1df"
+      ],
+      "id": "fuzz_main::@075933eab0618b1a18f5",
+      "link_fragments": [
+        {
+          "fragment": "-std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wmissing-variable-declarations -Wswitch-enum -fvisibility=hidden",
+          "role": "flags"
+        },
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "-Wl,-rpath,/tmp/anaport_IoCkSE",
+          "role": "libraries"
+        },
+        {
+          "fragment": "../libcjson.so.1.7.19",
+          "role": "libraries"
+        },
+        {
+          "fragment": "-lm",
+          "role": "libraries"
+        }
+      ],
+      "name": "fuzz_main",
+      "source_dir": "fuzzing",
+      "sources": [
+        "fuzzing/fuzz_main.c",
+        "fuzzing/cjson_read_fuzzer.c"
+      ],
+      "type": "EXECUTABLE"
+    },
+    {
+      "artifacts": [
+        "tests/minify_tests"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "CJSON_API_VISIBILITY",
+            "CJSON_EXPORT_SYMBOLS",
+            "ENABLE_LOCALES"
+          ],
+          "includes": [],
+          "language": "C"
+        }
+      ],
+      "dependencies": [
+        "unity::@a44f0ac069e85531cdee",
+        "cjson::@6890427a1f51a3e7e1df"
+      ],
+      "id": "minify_tests::@a44f0ac069e85531cdee",
+      "link_fragments": [
+        {
+          "fragment": "-std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wmissing-variable-declarations -Wswitch-enum -fvisibility=hidden",
+          "role": "flags"
+        },
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "-Wl,-rpath,/tmp/anaport_IoCkSE",
+          "role": "libraries"
+        },
+        {
+          "fragment": "../libcjson.so.1.7.19",
+          "role": "libraries"
+        },
+        {
+          "fragment": "libunity.a",
+          "role": "libraries"
+        },
+        {
+          "fragment": "-lm",
+          "role": "libraries"
+        }
+      ],
+      "name": "minify_tests",
+      "source_dir": "tests",
+      "sources": [
+        "tests/minify_tests.c"
+      ],
+      "type": "EXECUTABLE"
+    },
+    {
+      "artifacts": [
+        "tests/misc_tests"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "CJSON_API_VISIBILITY",
+            "CJSON_EXPORT_SYMBOLS",
+            "ENABLE_LOCALES"
+          ],
+          "includes": [],
+          "language": "C"
+        }
+      ],
+      "dependencies": [
+        "unity::@a44f0ac069e85531cdee",
+        "cjson::@6890427a1f51a3e7e1df"
+      ],
+      "id": "misc_tests::@a44f0ac069e85531cdee",
+      "link_fragments": [
+        {
+          "fragment": "-std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wmissing-variable-declarations -Wswitch-enum -fvisibility=hidden",
+          "role": "flags"
+        },
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "-Wl,-rpath,/tmp/anaport_IoCkSE",
+          "role": "libraries"
+        },
+        {
+          "fragment": "../libcjson.so.1.7.19",
+          "role": "libraries"
+        },
+        {
+          "fragment": "libunity.a",
+          "role": "libraries"
+        },
+        {
+          "fragment": "-lm",
+          "role": "libraries"
+        }
+      ],
+      "name": "misc_tests",
+      "source_dir": "tests",
+      "sources": [
+        "tests/misc_tests.c"
+      ],
+      "type": "EXECUTABLE"
+    },
+    {
+      "artifacts": [
+        "tests/parse_array"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "CJSON_API_VISIBILITY",
+            "CJSON_EXPORT_SYMBOLS",
+            "ENABLE_LOCALES"
+          ],
+          "includes": [],
+          "language": "C"
+        }
+      ],
+      "dependencies": [
+        "unity::@a44f0ac069e85531cdee",
+        "cjson::@6890427a1f51a3e7e1df"
+      ],
+      "id": "parse_array::@a44f0ac069e85531cdee",
+      "link_fragments": [
+        {
+          "fragment": "-std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wmissing-variable-declarations -Wswitch-enum -fvisibility=hidden",
+          "role": "flags"
+        },
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "-Wl,-rpath,/tmp/anaport_IoCkSE",
+          "role": "libraries"
+        },
+        {
+          "fragment": "../libcjson.so.1.7.19",
+          "role": "libraries"
+        },
+        {
+          "fragment": "libunity.a",
+          "role": "libraries"
+        },
+        {
+          "fragment": "-lm",
+          "role": "libraries"
+        }
+      ],
+      "name": "parse_array",
+      "source_dir": "tests",
+      "sources": [
+        "tests/parse_array.c"
+      ],
+      "type": "EXECUTABLE"
+    },
+    {
+      "artifacts": [
+        "tests/parse_examples"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "CJSON_API_VISIBILITY",
+            "CJSON_EXPORT_SYMBOLS",
+            "ENABLE_LOCALES"
+          ],
+          "includes": [],
+          "language": "C"
+        }
+      ],
+      "dependencies": [
+        "unity::@a44f0ac069e85531cdee",
+        "cjson::@6890427a1f51a3e7e1df"
+      ],
+      "id": "parse_examples::@a44f0ac069e85531cdee",
+      "link_fragments": [
+        {
+          "fragment": "-std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wmissing-variable-declarations -Wswitch-enum -fvisibility=hidden",
+          "role": "flags"
+        },
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "-Wl,-rpath,/tmp/anaport_IoCkSE",
+          "role": "libraries"
+        },
+        {
+          "fragment": "../libcjson.so.1.7.19",
+          "role": "libraries"
+        },
+        {
+          "fragment": "libunity.a",
+          "role": "libraries"
+        },
+        {
+          "fragment": "-lm",
+          "role": "libraries"
+        }
+      ],
+      "name": "parse_examples",
+      "source_dir": "tests",
+      "sources": [
+        "tests/parse_examples.c"
+      ],
+      "type": "EXECUTABLE"
+    },
+    {
+      "artifacts": [
+        "tests/parse_hex4"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "CJSON_API_VISIBILITY",
+            "CJSON_EXPORT_SYMBOLS",
+            "ENABLE_LOCALES"
+          ],
+          "includes": [],
+          "language": "C"
+        }
+      ],
+      "dependencies": [
+        "unity::@a44f0ac069e85531cdee",
+        "cjson::@6890427a1f51a3e7e1df"
+      ],
+      "id": "parse_hex4::@a44f0ac069e85531cdee",
+      "link_fragments": [
+        {
+          "fragment": "-std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wmissing-variable-declarations -Wswitch-enum -fvisibility=hidden",
+          "role": "flags"
+        },
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "-Wl,-rpath,/tmp/anaport_IoCkSE",
+          "role": "libraries"
+        },
+        {
+          "fragment": "../libcjson.so.1.7.19",
+          "role": "libraries"
+        },
+        {
+          "fragment": "libunity.a",
+          "role": "libraries"
+        },
+        {
+          "fragment": "-lm",
+          "role": "libraries"
+        }
+      ],
+      "name": "parse_hex4",
+      "source_dir": "tests",
+      "sources": [
+        "tests/parse_hex4.c"
+      ],
+      "type": "EXECUTABLE"
+    },
+    {
+      "artifacts": [
+        "tests/parse_number"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "CJSON_API_VISIBILITY",
+            "CJSON_EXPORT_SYMBOLS",
+            "ENABLE_LOCALES"
+          ],
+          "includes": [],
+          "language": "C"
+        }
+      ],
+      "dependencies": [
+        "unity::@a44f0ac069e85531cdee",
+        "cjson::@6890427a1f51a3e7e1df"
+      ],
+      "id": "parse_number::@a44f0ac069e85531cdee",
+      "link_fragments": [
+        {
+          "fragment": "-std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wmissing-variable-declarations -Wswitch-enum -fvisibility=hidden",
+          "role": "flags"
+        },
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "-Wl,-rpath,/tmp/anaport_IoCkSE",
+          "role": "libraries"
+        },
+        {
+          "fragment": "../libcjson.so.1.7.19",
+          "role": "libraries"
+        },
+        {
+          "fragment": "libunity.a",
+          "role": "libraries"
+        },
+        {
+          "fragment": "-lm",
+          "role": "libraries"
+        }
+      ],
+      "name": "parse_number",
+      "source_dir": "tests",
+      "sources": [
+        "tests/parse_number.c"
+      ],
+      "type": "EXECUTABLE"
+    },
+    {
+      "artifacts": [
+        "tests/parse_object"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "CJSON_API_VISIBILITY",
+            "CJSON_EXPORT_SYMBOLS",
+            "ENABLE_LOCALES"
+          ],
+          "includes": [],
+          "language": "C"
+        }
+      ],
+      "dependencies": [
+        "unity::@a44f0ac069e85531cdee",
+        "cjson::@6890427a1f51a3e7e1df"
+      ],
+      "id": "parse_object::@a44f0ac069e85531cdee",
+      "link_fragments": [
+        {
+          "fragment": "-std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wmissing-variable-declarations -Wswitch-enum -fvisibility=hidden",
+          "role": "flags"
+        },
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "-Wl,-rpath,/tmp/anaport_IoCkSE",
+          "role": "libraries"
+        },
+        {
+          "fragment": "../libcjson.so.1.7.19",
+          "role": "libraries"
+        },
+        {
+          "fragment": "libunity.a",
+          "role": "libraries"
+        },
+        {
+          "fragment": "-lm",
+          "role": "libraries"
+        }
+      ],
+      "name": "parse_object",
+      "source_dir": "tests",
+      "sources": [
+        "tests/parse_object.c"
+      ],
+      "type": "EXECUTABLE"
+    },
+    {
+      "artifacts": [
+        "tests/parse_string"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "CJSON_API_VISIBILITY",
+            "CJSON_EXPORT_SYMBOLS",
+            "ENABLE_LOCALES"
+          ],
+          "includes": [],
+          "language": "C"
+        }
+      ],
+      "dependencies": [
+        "unity::@a44f0ac069e85531cdee",
+        "cjson::@6890427a1f51a3e7e1df"
+      ],
+      "id": "parse_string::@a44f0ac069e85531cdee",
+      "link_fragments": [
+        {
+          "fragment": "-std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wmissing-variable-declarations -Wswitch-enum -fvisibility=hidden",
+          "role": "flags"
+        },
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "-Wl,-rpath,/tmp/anaport_IoCkSE",
+          "role": "libraries"
+        },
+        {
+          "fragment": "../libcjson.so.1.7.19",
+          "role": "libraries"
+        },
+        {
+          "fragment": "libunity.a",
+          "role": "libraries"
+        },
+        {
+          "fragment": "-lm",
+          "role": "libraries"
+        }
+      ],
+      "name": "parse_string",
+      "source_dir": "tests",
+      "sources": [
+        "tests/parse_string.c"
+      ],
+      "type": "EXECUTABLE"
+    },
+    {
+      "artifacts": [
+        "tests/parse_value"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "CJSON_API_VISIBILITY",
+            "CJSON_EXPORT_SYMBOLS",
+            "ENABLE_LOCALES"
+          ],
+          "includes": [],
+          "language": "C"
+        }
+      ],
+      "dependencies": [
+        "unity::@a44f0ac069e85531cdee",
+        "cjson::@6890427a1f51a3e7e1df"
+      ],
+      "id": "parse_value::@a44f0ac069e85531cdee",
+      "link_fragments": [
+        {
+          "fragment": "-std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wmissing-variable-declarations -Wswitch-enum -fvisibility=hidden",
+          "role": "flags"
+        },
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "-Wl,-rpath,/tmp/anaport_IoCkSE",
+          "role": "libraries"
+        },
+        {
+          "fragment": "../libcjson.so.1.7.19",
+          "role": "libraries"
+        },
+        {
+          "fragment": "libunity.a",
+          "role": "libraries"
+        },
+        {
+          "fragment": "-lm",
+          "role": "libraries"
+        }
+      ],
+      "name": "parse_value",
+      "source_dir": "tests",
+      "sources": [
+        "tests/parse_value.c"
+      ],
+      "type": "EXECUTABLE"
+    },
+    {
+      "artifacts": [
+        "tests/parse_with_opts"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "CJSON_API_VISIBILITY",
+            "CJSON_EXPORT_SYMBOLS",
+            "ENABLE_LOCALES"
+          ],
+          "includes": [],
+          "language": "C"
+        }
+      ],
+      "dependencies": [
+        "unity::@a44f0ac069e85531cdee",
+        "cjson::@6890427a1f51a3e7e1df"
+      ],
+      "id": "parse_with_opts::@a44f0ac069e85531cdee",
+      "link_fragments": [
+        {
+          "fragment": "-std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wmissing-variable-declarations -Wswitch-enum -fvisibility=hidden",
+          "role": "flags"
+        },
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "-Wl,-rpath,/tmp/anaport_IoCkSE",
+          "role": "libraries"
+        },
+        {
+          "fragment": "../libcjson.so.1.7.19",
+          "role": "libraries"
+        },
+        {
+          "fragment": "libunity.a",
+          "role": "libraries"
+        },
+        {
+          "fragment": "-lm",
+          "role": "libraries"
+        }
+      ],
+      "name": "parse_with_opts",
+      "source_dir": "tests",
+      "sources": [
+        "tests/parse_with_opts.c"
+      ],
+      "type": "EXECUTABLE"
+    },
+    {
+      "artifacts": [
+        "tests/print_array"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "CJSON_API_VISIBILITY",
+            "CJSON_EXPORT_SYMBOLS",
+            "ENABLE_LOCALES"
+          ],
+          "includes": [],
+          "language": "C"
+        }
+      ],
+      "dependencies": [
+        "unity::@a44f0ac069e85531cdee",
+        "cjson::@6890427a1f51a3e7e1df"
+      ],
+      "id": "print_array::@a44f0ac069e85531cdee",
+      "link_fragments": [
+        {
+          "fragment": "-std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wmissing-variable-declarations -Wswitch-enum -fvisibility=hidden",
+          "role": "flags"
+        },
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "-Wl,-rpath,/tmp/anaport_IoCkSE",
+          "role": "libraries"
+        },
+        {
+          "fragment": "../libcjson.so.1.7.19",
+          "role": "libraries"
+        },
+        {
+          "fragment": "libunity.a",
+          "role": "libraries"
+        },
+        {
+          "fragment": "-lm",
+          "role": "libraries"
+        }
+      ],
+      "name": "print_array",
+      "source_dir": "tests",
+      "sources": [
+        "tests/print_array.c"
+      ],
+      "type": "EXECUTABLE"
+    },
+    {
+      "artifacts": [
+        "tests/print_number"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "CJSON_API_VISIBILITY",
+            "CJSON_EXPORT_SYMBOLS",
+            "ENABLE_LOCALES"
+          ],
+          "includes": [],
+          "language": "C"
+        }
+      ],
+      "dependencies": [
+        "unity::@a44f0ac069e85531cdee",
+        "cjson::@6890427a1f51a3e7e1df"
+      ],
+      "id": "print_number::@a44f0ac069e85531cdee",
+      "link_fragments": [
+        {
+          "fragment": "-std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wmissing-variable-declarations -Wswitch-enum -fvisibility=hidden",
+          "role": "flags"
+        },
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "-Wl,-rpath,/tmp/anaport_IoCkSE",
+          "role": "libraries"
+        },
+        {
+          "fragment": "../libcjson.so.1.7.19",
+          "role": "libraries"
+        },
+        {
+          "fragment": "libunity.a",
+          "role": "libraries"
+        },
+        {
+          "fragment": "-lm",
+          "role": "libraries"
+        }
+      ],
+      "name": "print_number",
+      "source_dir": "tests",
+      "sources": [
+        "tests/print_number.c"
+      ],
+      "type": "EXECUTABLE"
+    },
+    {
+      "artifacts": [
+        "tests/print_object"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "CJSON_API_VISIBILITY",
+            "CJSON_EXPORT_SYMBOLS",
+            "ENABLE_LOCALES"
+          ],
+          "includes": [],
+          "language": "C"
+        }
+      ],
+      "dependencies": [
+        "unity::@a44f0ac069e85531cdee",
+        "cjson::@6890427a1f51a3e7e1df"
+      ],
+      "id": "print_object::@a44f0ac069e85531cdee",
+      "link_fragments": [
+        {
+          "fragment": "-std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wmissing-variable-declarations -Wswitch-enum -fvisibility=hidden",
+          "role": "flags"
+        },
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "-Wl,-rpath,/tmp/anaport_IoCkSE",
+          "role": "libraries"
+        },
+        {
+          "fragment": "../libcjson.so.1.7.19",
+          "role": "libraries"
+        },
+        {
+          "fragment": "libunity.a",
+          "role": "libraries"
+        },
+        {
+          "fragment": "-lm",
+          "role": "libraries"
+        }
+      ],
+      "name": "print_object",
+      "source_dir": "tests",
+      "sources": [
+        "tests/print_object.c"
+      ],
+      "type": "EXECUTABLE"
+    },
+    {
+      "artifacts": [
+        "tests/print_string"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "CJSON_API_VISIBILITY",
+            "CJSON_EXPORT_SYMBOLS",
+            "ENABLE_LOCALES"
+          ],
+          "includes": [],
+          "language": "C"
+        }
+      ],
+      "dependencies": [
+        "unity::@a44f0ac069e85531cdee",
+        "cjson::@6890427a1f51a3e7e1df"
+      ],
+      "id": "print_string::@a44f0ac069e85531cdee",
+      "link_fragments": [
+        {
+          "fragment": "-std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wmissing-variable-declarations -Wswitch-enum -fvisibility=hidden",
+          "role": "flags"
+        },
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "-Wl,-rpath,/tmp/anaport_IoCkSE",
+          "role": "libraries"
+        },
+        {
+          "fragment": "../libcjson.so.1.7.19",
+          "role": "libraries"
+        },
+        {
+          "fragment": "libunity.a",
+          "role": "libraries"
+        },
+        {
+          "fragment": "-lm",
+          "role": "libraries"
+        }
+      ],
+      "name": "print_string",
+      "source_dir": "tests",
+      "sources": [
+        "tests/print_string.c"
+      ],
+      "type": "EXECUTABLE"
+    },
+    {
+      "artifacts": [
+        "tests/print_value"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "CJSON_API_VISIBILITY",
+            "CJSON_EXPORT_SYMBOLS",
+            "ENABLE_LOCALES"
+          ],
+          "includes": [],
+          "language": "C"
+        }
+      ],
+      "dependencies": [
+        "unity::@a44f0ac069e85531cdee",
+        "cjson::@6890427a1f51a3e7e1df"
+      ],
+      "id": "print_value::@a44f0ac069e85531cdee",
+      "link_fragments": [
+        {
+          "fragment": "-std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wmissing-variable-declarations -Wswitch-enum -fvisibility=hidden",
+          "role": "flags"
+        },
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "-Wl,-rpath,/tmp/anaport_IoCkSE",
+          "role": "libraries"
+        },
+        {
+          "fragment": "../libcjson.so.1.7.19",
+          "role": "libraries"
+        },
+        {
+          "fragment": "libunity.a",
+          "role": "libraries"
+        },
+        {
+          "fragment": "-lm",
+          "role": "libraries"
+        }
+      ],
+      "name": "print_value",
+      "source_dir": "tests",
+      "sources": [
+        "tests/print_value.c"
+      ],
+      "type": "EXECUTABLE"
+    },
+    {
+      "artifacts": [
+        "tests/readme_examples"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "CJSON_API_VISIBILITY",
+            "CJSON_EXPORT_SYMBOLS",
+            "ENABLE_LOCALES"
+          ],
+          "includes": [],
+          "language": "C"
+        }
+      ],
+      "dependencies": [
+        "unity::@a44f0ac069e85531cdee",
+        "cjson::@6890427a1f51a3e7e1df"
+      ],
+      "id": "readme_examples::@a44f0ac069e85531cdee",
+      "link_fragments": [
+        {
+          "fragment": "-std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wmissing-variable-declarations -Wswitch-enum -fvisibility=hidden",
+          "role": "flags"
+        },
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "-Wl,-rpath,/tmp/anaport_IoCkSE",
+          "role": "libraries"
+        },
+        {
+          "fragment": "../libcjson.so.1.7.19",
+          "role": "libraries"
+        },
+        {
+          "fragment": "libunity.a",
+          "role": "libraries"
+        },
+        {
+          "fragment": "-lm",
+          "role": "libraries"
+        }
+      ],
+      "name": "readme_examples",
+      "source_dir": "tests",
+      "sources": [
+        "tests/readme_examples.c"
+      ],
+      "type": "EXECUTABLE"
+    },
+    {
+      "artifacts": [],
+      "compile_groups": [],
+      "dependencies": [],
+      "id": "uninstall::@6890427a1f51a3e7e1df",
+      "link_fragments": [],
+      "name": "uninstall",
+      "source_dir": ".",
+      "sources": [
+        "/tmp/anaport_IoCkSE/CMakeFiles/uninstall",
+        "/tmp/anaport_IoCkSE/CMakeFiles/uninstall.rule"
+      ],
+      "type": "UTILITY"
+    },
+    {
+      "artifacts": [
+        "tests/libunity.a"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "CJSON_API_VISIBILITY",
+            "CJSON_EXPORT_SYMBOLS",
+            "ENABLE_LOCALES"
+          ],
+          "includes": [],
+          "language": "C"
+        }
+      ],
+      "dependencies": [],
+      "id": "unity::@a44f0ac069e85531cdee",
+      "link_fragments": [],
+      "name": "unity",
+      "source_dir": "tests",
+      "sources": [
+        "tests/unity/src/unity.c"
+      ],
+      "type": "STATIC_LIBRARY"
+    }
+  ],
+  "tool": "analyze-portability",
+  "tool_version": "1.1.0"
+}

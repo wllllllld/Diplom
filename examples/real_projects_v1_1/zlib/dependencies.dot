@@ -1,0 +1,23 @@
+// analyze-portability: dependency graph for project 'zlib'
+digraph dependencies {
+  graph [rankdir=LR, label="zlib — Dependency Graph", fontsize=14];
+  node [shape=box, style=filled, fontname="Helvetica"];
+
+  "infcover" [label="infcover\n[EXECUTABLE]\n⚠ 1 warnings", fillcolor="lightyellow"];
+  "minigzip" [label="minigzip\n[EXECUTABLE]", fillcolor="lightblue"];
+  "static_minigzip" [label="static_minigzip\n[EXECUTABLE]\n⚠ 1 warnings", fillcolor="lightyellow"];
+  "zlib" [label="zlib\n[SHARED_LIBRARY]", fillcolor="lightyellow"];
+  "zlib_example" [label="zlib_example\n[EXECUTABLE]", fillcolor="lightblue"];
+  "zlib_example64" [label="zlib_example64\n[EXECUTABLE]", fillcolor="lightblue"];
+  "zlib_static_example" [label="zlib_static_example\n[EXECUTABLE]\n⚠ 1 warnings", fillcolor="lightyellow"];
+  "zlib_static_example64" [label="zlib_static_example64\n[EXECUTABLE]\n⚠ 1 warnings", fillcolor="lightyellow"];
+  "zlibstatic" [label="zlibstatic\n[STATIC_LIBRARY]", fillcolor="lightgreen"];
+
+  "infcover" -> "zlibstatic";
+  "minigzip" -> "zlib";
+  "static_minigzip" -> "zlibstatic";
+  "zlib_example" -> "zlib";
+  "zlib_example64" -> "zlib";
+  "zlib_static_example" -> "zlibstatic";
+  "zlib_static_example64" -> "zlibstatic";
+}

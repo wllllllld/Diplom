@@ -1,0 +1,27 @@
+// analyze-portability: dependency graph for project 'libfreenect'
+digraph dependencies {
+  graph [rankdir=LR, label="libfreenect — Dependency Graph", fontsize=14];
+  node [shape=box, style=filled, fontname="Helvetica"];
+
+  "fakenect" [label="fakenect\n[SHARED_LIBRARY]\n⚠ 1 warnings", fillcolor="lightyellow"];
+  "fakenect-record" [label="fakenect-record\n[EXECUTABLE]\n⚠ 2 warnings", fillcolor="lightyellow"];
+  "freenect" [label="freenect\n[SHARED_LIBRARY]\n⚠ 1 warnings", fillcolor="lightyellow"];
+  "freenect-camtest" [label="freenect-camtest\n[EXECUTABLE]\n⚠ 1 warnings", fillcolor="lightyellow"];
+  "freenect-regtest" [label="freenect-regtest\n[EXECUTABLE]\n⚠ 3 warnings", fillcolor="lightyellow"];
+  "freenect-tiltdemo" [label="freenect-tiltdemo\n[EXECUTABLE]\n⚠ 3 warnings", fillcolor="lightyellow"];
+  "freenect-wavrecord" [label="freenect-wavrecord\n[EXECUTABLE]\n⚠ 1 warnings", fillcolor="lightyellow"];
+  "freenect_sync" [label="freenect_sync\n[SHARED_LIBRARY]\n⚠ 2 warnings", fillcolor="lightyellow"];
+  "freenect_sync_static" [label="freenect_sync_static\n[STATIC_LIBRARY]", fillcolor="lightgreen"];
+  "freenectstatic" [label="freenectstatic\n[STATIC_LIBRARY]", fillcolor="lightgreen"];
+  "uninstall" [label="uninstall\n[UTILITY]", fillcolor="lightgray"];
+
+  "fakenect-record" -> "freenect";
+  "freenect-camtest" -> "freenect";
+  "freenect-regtest" -> "freenect";
+  "freenect-regtest" -> "freenect_sync";
+  "freenect-tiltdemo" -> "freenect";
+  "freenect-tiltdemo" -> "freenect_sync";
+  "freenect-wavrecord" -> "freenect";
+  "freenect_sync" -> "freenect";
+  "freenect_sync_static" -> "freenect";
+}

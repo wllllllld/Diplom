@@ -1,0 +1,54 @@
+{
+  "build_dir": "/tmp/anaport_y1BNTR",
+  "configure_status": {
+    "error": "CMake File API reply dir not found: /tmp/anaport_y1BNTR/.cmake/api/v1/reply\n  Did cmake configure succeed?",
+    "exit_code": 1,
+    "success": false
+  },
+  "data_sources": {
+    "cmake_cache": {
+      "found": true,
+      "parsed": true,
+      "variable_count": 130
+    },
+    "compile_commands": {
+      "found": false,
+      "parsed": false
+    },
+    "file_api": false
+  },
+  "dependency_edges": [],
+  "file_api_note": "CMake File API reply was unavailable (configure failed before CMake could write reply files). Portability analysis could not be performed.",
+  "findings": [
+    {
+      "category": "configure_failure",
+      "field": "cmake_configure",
+      "message": "CMake File API reply dir not found: /tmp/anaport_y1BNTR/.cmake/api/v1/reply\n  Did cmake configure succeed?",
+      "recommendation": "Inspect the configure log for the root cause. Check for platform-specific CMake dependencies (Windows SDK, MSVC flags, platform-only find_package). Run on the supported OS or add platform guards (if(WIN32), if(APPLE), etc.) to the CMakeLists.txt.",
+      "severity": "error",
+      "source": "analyzer",
+      "target": "",
+      "value": "exit_code=1"
+    }
+  ],
+  "generated_at": "2026-05-26T23:05:48Z",
+  "project_name": "unknown",
+  "source_dir": "/home/user/workspace/portability_stress_projects/directshow_camera",
+  "status": "configure_failed",
+  "summary": {
+    "errors": 1,
+    "findings_by_category": {
+      "configure_failure": 1
+    },
+    "findings_by_source": {
+      "analyzer": 1
+    },
+    "info": 0,
+    "total_findings": 1,
+    "total_targets": 0,
+    "warnings": 0
+  },
+  "targets": [],
+  "tool": "analyze-portability",
+  "tool_version": "1.1.0"
+}

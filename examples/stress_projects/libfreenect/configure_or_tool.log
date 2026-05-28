@@ -1,0 +1,271 @@
+[INFO] === analyze-portability v1.1.0 ===
+[INFO] Source: /home/user/workspace/portability_stress_projects/libfreenect
+[INFO] Output: /home/user/workspace/analyze-portability/examples/stress_projects/libfreenect
+[VERB] Source dir : /home/user/workspace/portability_stress_projects/libfreenect
+[VERB] Output dir : /home/user/workspace/analyze-portability/examples/stress_projects/libfreenect
+[VERB] Build  dir : /tmp/anaport_NcePzG
+[VERB] Wrote File API query file: /tmp/anaport_NcePzG/.cmake/api/v1/query/codemodel-v2
+[INFO] Running: cmake -S /home/user/workspace/portability_stress_projects/libfreenect -B /tmp/anaport_NcePzG
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Operating system is Linux
+-- Got System Processor x86_64
+-- Linux x86_64 Detected
+-- libfreenect will be installed to /usr/local
+-- Headers will be installed to /usr/local/include/libfreenect
+-- Libraries will be installed to /usr/local/lib
+-- Found libusb-1.0:
+--  - Includes: /usr/include/libusb-1.0
+--  - Libraries: /usr/lib/x86_64-linux-gnu/libusb-1.0.so
+-- Looking for include file pthread.h
+-- Looking for include file pthread.h - found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE
+-- Could NOT find OpenGL (missing: OPENGL_opengl_LIBRARY OPENGL_INCLUDE_DIR OpenGL) 
+-- Could NOT find GLUT (missing: GLUT_glut_LIBRARY GLUT_INCLUDE_DIR) 
+-- Could NOT find OpenGL (missing: OPENGL_opengl_LIBRARY OPENGL_INCLUDE_DIR OpenGL) 
+-- Could NOT find GLUT (missing: GLUT_glut_LIBRARY GLUT_INCLUDE_DIR) 
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /tmp/anaport_NcePzG
+[INFO] cmake configure succeeded
+[VERB] Reading File API reply dir: /tmp/anaport_NcePzG/.cmake/api/v1/reply
+[VERB] Index file: index-2026-05-26T22-57-07-0720.json
+[VERB] Codemodel file: codemodel-v2-0b6c1d3608693c2353e4.json
+[VERB]   Parsed target: fakenect [SHARED_LIBRARY] compileGroups=1 linkFrags=2 deps=0
+[VERB]   Parsed target: fakenect-record [EXECUTABLE] compileGroups=1 linkFrags=6 deps=1
+[VERB]   Parsed target: freenect [SHARED_LIBRARY] compileGroups=1 linkFrags=2 deps=0
+[VERB]   Parsed target: freenect-camtest [EXECUTABLE] compileGroups=1 linkFrags=5 deps=1
+[VERB]   Parsed target: freenect-regtest [EXECUTABLE] compileGroups=1 linkFrags=8 deps=2
+[VERB]   Parsed target: freenect-tiltdemo [EXECUTABLE] compileGroups=1 linkFrags=8 deps=2
+[VERB]   Parsed target: freenect-wavrecord [EXECUTABLE] compileGroups=1 linkFrags=5 deps=1
+[VERB]   Parsed target: freenect_sync [SHARED_LIBRARY] compileGroups=1 linkFrags=5 deps=1
+[VERB]   Parsed target: freenect_sync_static [STATIC_LIBRARY] compileGroups=1 linkFrags=0 deps=1
+[VERB]   Parsed target: freenectstatic [STATIC_LIBRARY] compileGroups=1 linkFrags=0 deps=0
+[VERB]   Parsed target: uninstall [UTILITY] compileGroups=0 linkFrags=0 deps=0
+[INFO] Parsed project: libfreenect (cmake 3.31.6), targets: 11
+[INFO] Found compile_commands.json: /tmp/anaport_NcePzG/compile_commands.json
+[INFO] compile_commands.json: parsed 27 entries, 87 observations
+[VERB]   cc_obs [compiler_flag] -fPIC (from /home/user/workspace/portability_stress_projects/libfreenect/fakenect/fakenect.c)
+[VERB]   cc_obs [compiler_flag] -fPIC (from /home/user/workspace/portability_stress_projects/libfreenect/fakenect/parson.c)
+[VERB]   cc_obs [compiler_flag] -fPIC (from /home/user/workspace/portability_stress_projects/libfreenect/src/audio.c)
+[VERB]   cc_obs [compiler_flag] -fPIC (from /home/user/workspace/portability_stress_projects/libfreenect/src/cameras.c)
+[VERB]   cc_obs [compiler_flag] -fPIC (from /home/user/workspace/portability_stress_projects/libfreenect/src/core.c)
+[VERB]   cc_obs [compiler_flag] -fPIC (from /home/user/workspace/portability_stress_projects/libfreenect/src/flags.c)
+[VERB]   cc_obs [compiler_flag] -fPIC (from /home/user/workspace/portability_stress_projects/libfreenect/src/loader.c)
+[VERB]   cc_obs [compiler_flag] -fPIC (from /home/user/workspace/portability_stress_projects/libfreenect/src/registration.c)
+[VERB]   cc_obs [compiler_flag] -fPIC (from /home/user/workspace/portability_stress_projects/libfreenect/src/tilt.c)
+[VERB]   cc_obs [compiler_flag] -fPIC (from /home/user/workspace/portability_stress_projects/libfreenect/src/usb_libusb10.c)
+[VERB]   cc_obs [compiler_flag] -fPIC (from /home/user/workspace/portability_stress_projects/libfreenect/wrappers/c_sync/libfreenect_sync.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libfreenect/examples/../wrappers/c_sync (from /home/user/workspace/portability_stress_projects/libfreenect/examples/camtest.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libfreenect/examples/../wrappers/c_sync (from /home/user/workspace/portability_stress_projects/libfreenect/examples/regtest.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libfreenect/examples/../wrappers/c_sync (from /home/user/workspace/portability_stress_projects/libfreenect/examples/tiltdemo.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libfreenect/examples/../wrappers/c_sync (from /home/user/workspace/portability_stress_projects/libfreenect/examples/wavrecord.c)
+[VERB]   cc_obs [absolute_path] /home/user/workspace/portability_stress_projects/libfreenect/examples/camtest.c (from /home/user/workspace/portability_stress_projects/libfreenect/examples/camtest.c)
+[VERB]   cc_obs [absolute_path] /home/user/workspace/portability_stress_projects/libfreenect/examples/regtest.c (from /home/user/workspace/portability_stress_projects/libfreenect/examples/regtest.c)
+[VERB]   cc_obs [absolute_path] /home/user/workspace/portability_stress_projects/libfreenect/examples/tiltdemo.c (from /home/user/workspace/portability_stress_projects/libfreenect/examples/tiltdemo.c)
+[VERB]   cc_obs [absolute_path] /home/user/workspace/portability_stress_projects/libfreenect/examples/wavrecord.c (from /home/user/workspace/portability_stress_projects/libfreenect/examples/wavrecord.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libfreenect/fakenect/../src (from /home/user/workspace/portability_stress_projects/libfreenect/fakenect/fakenect.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libfreenect/fakenect/../src (from /home/user/workspace/portability_stress_projects/libfreenect/fakenect/parson.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libfreenect/fakenect/../src (from /home/user/workspace/portability_stress_projects/libfreenect/fakenect/record.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libfreenect/fakenect/../src (from /home/user/workspace/portability_stress_projects/libfreenect/src/registration.c)
+[VERB]   cc_obs [absolute_path] /home/user/workspace/portability_stress_projects/libfreenect/fakenect/fakenect.c (from /home/user/workspace/portability_stress_projects/libfreenect/fakenect/fakenect.c)
+[VERB]   cc_obs [absolute_path] /home/user/workspace/portability_stress_projects/libfreenect/fakenect/parson.c (from /home/user/workspace/portability_stress_projects/libfreenect/fakenect/parson.c)
+[VERB]   cc_obs [absolute_path] /home/user/workspace/portability_stress_projects/libfreenect/fakenect/record.c (from /home/user/workspace/portability_stress_projects/libfreenect/fakenect/record.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libfreenect/include (from /home/user/workspace/portability_stress_projects/libfreenect/examples/camtest.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libfreenect/include (from /home/user/workspace/portability_stress_projects/libfreenect/examples/regtest.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libfreenect/include (from /home/user/workspace/portability_stress_projects/libfreenect/examples/tiltdemo.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libfreenect/include (from /home/user/workspace/portability_stress_projects/libfreenect/examples/wavrecord.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libfreenect/include (from /home/user/workspace/portability_stress_projects/libfreenect/fakenect/fakenect.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libfreenect/include (from /home/user/workspace/portability_stress_projects/libfreenect/fakenect/parson.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libfreenect/include (from /home/user/workspace/portability_stress_projects/libfreenect/fakenect/record.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libfreenect/include (from /home/user/workspace/portability_stress_projects/libfreenect/src/audio.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libfreenect/include (from /home/user/workspace/portability_stress_projects/libfreenect/src/cameras.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libfreenect/include (from /home/user/workspace/portability_stress_projects/libfreenect/src/core.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libfreenect/include (from /home/user/workspace/portability_stress_projects/libfreenect/src/flags.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libfreenect/include (from /home/user/workspace/portability_stress_projects/libfreenect/src/loader.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libfreenect/include (from /home/user/workspace/portability_stress_projects/libfreenect/src/registration.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libfreenect/include (from /home/user/workspace/portability_stress_projects/libfreenect/src/tilt.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libfreenect/include (from /home/user/workspace/portability_stress_projects/libfreenect/src/usb_libusb10.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libfreenect/include (from /home/user/workspace/portability_stress_projects/libfreenect/wrappers/c_sync/libfreenect_sync.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libfreenect/src (from /home/user/workspace/portability_stress_projects/libfreenect/src/audio.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libfreenect/src (from /home/user/workspace/portability_stress_projects/libfreenect/src/cameras.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libfreenect/src (from /home/user/workspace/portability_stress_projects/libfreenect/src/core.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libfreenect/src (from /home/user/workspace/portability_stress_projects/libfreenect/src/flags.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libfreenect/src (from /home/user/workspace/portability_stress_projects/libfreenect/src/loader.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libfreenect/src (from /home/user/workspace/portability_stress_projects/libfreenect/src/registration.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libfreenect/src (from /home/user/workspace/portability_stress_projects/libfreenect/src/tilt.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libfreenect/src (from /home/user/workspace/portability_stress_projects/libfreenect/src/usb_libusb10.c)
+[VERB]   cc_obs [absolute_path] /home/user/workspace/portability_stress_projects/libfreenect/src/audio.c (from /home/user/workspace/portability_stress_projects/libfreenect/src/audio.c)
+[VERB]   cc_obs [absolute_path] /home/user/workspace/portability_stress_projects/libfreenect/src/cameras.c (from /home/user/workspace/portability_stress_projects/libfreenect/src/cameras.c)
+[VERB]   cc_obs [absolute_path] /home/user/workspace/portability_stress_projects/libfreenect/src/core.c (from /home/user/workspace/portability_stress_projects/libfreenect/src/core.c)
+[VERB]   cc_obs [absolute_path] /home/user/workspace/portability_stress_projects/libfreenect/src/flags.c (from /home/user/workspace/portability_stress_projects/libfreenect/src/flags.c)
+[VERB]   cc_obs [absolute_path] /home/user/workspace/portability_stress_projects/libfreenect/src/loader.c (from /home/user/workspace/portability_stress_projects/libfreenect/src/loader.c)
+[VERB]   cc_obs [absolute_path] /home/user/workspace/portability_stress_projects/libfreenect/src/registration.c (from /home/user/workspace/portability_stress_projects/libfreenect/src/registration.c)
+[VERB]   cc_obs [absolute_path] /home/user/workspace/portability_stress_projects/libfreenect/src/tilt.c (from /home/user/workspace/portability_stress_projects/libfreenect/src/tilt.c)
+[VERB]   cc_obs [absolute_path] /home/user/workspace/portability_stress_projects/libfreenect/src/usb_libusb10.c (from /home/user/workspace/portability_stress_projects/libfreenect/src/usb_libusb10.c)
+[VERB]   cc_obs [absolute_path] /home/user/workspace/portability_stress_projects/libfreenect/wrappers/c_sync/libfreenect_sync.c (from /home/user/workspace/portability_stress_projects/libfreenect/wrappers/c_sync/libfreenect_sync.c)
+[VERB]   cc_obs [include] /usr/include/libusb-1.0 (from /home/user/workspace/portability_stress_projects/libfreenect/examples/camtest.c)
+[VERB]   cc_obs [include] /usr/include/libusb-1.0 (from /home/user/workspace/portability_stress_projects/libfreenect/examples/regtest.c)
+[VERB]   cc_obs [include] /usr/include/libusb-1.0 (from /home/user/workspace/portability_stress_projects/libfreenect/examples/tiltdemo.c)
+[VERB]   cc_obs [include] /usr/include/libusb-1.0 (from /home/user/workspace/portability_stress_projects/libfreenect/examples/wavrecord.c)
+[VERB]   cc_obs [include] /usr/include/libusb-1.0 (from /home/user/workspace/portability_stress_projects/libfreenect/fakenect/fakenect.c)
+[VERB]   cc_obs [include] /usr/include/libusb-1.0 (from /home/user/workspace/portability_stress_projects/libfreenect/fakenect/parson.c)
+[VERB]   cc_obs [include] /usr/include/libusb-1.0 (from /home/user/workspace/portability_stress_projects/libfreenect/fakenect/record.c)
+[VERB]   cc_obs [include] /usr/include/libusb-1.0 (from /home/user/workspace/portability_stress_projects/libfreenect/src/audio.c)
+[VERB]   cc_obs [include] /usr/include/libusb-1.0 (from /home/user/workspace/portability_stress_projects/libfreenect/src/cameras.c)
+[VERB]   cc_obs [include] /usr/include/libusb-1.0 (from /home/user/workspace/portability_stress_projects/libfreenect/src/core.c)
+[VERB]   cc_obs [include] /usr/include/libusb-1.0 (from /home/user/workspace/portability_stress_projects/libfreenect/src/flags.c)
+[VERB]   cc_obs [include] /usr/include/libusb-1.0 (from /home/user/workspace/portability_stress_projects/libfreenect/src/loader.c)
+[VERB]   cc_obs [include] /usr/include/libusb-1.0 (from /home/user/workspace/portability_stress_projects/libfreenect/src/registration.c)
+[VERB]   cc_obs [include] /usr/include/libusb-1.0 (from /home/user/workspace/portability_stress_projects/libfreenect/src/tilt.c)
+[VERB]   cc_obs [include] /usr/include/libusb-1.0 (from /home/user/workspace/portability_stress_projects/libfreenect/src/usb_libusb10.c)
+[VERB]   cc_obs [include] /usr/include/libusb-1.0 (from /home/user/workspace/portability_stress_projects/libfreenect/wrappers/c_sync/libfreenect_sync.c)
+[VERB]   cc_obs [define] fakenect_EXPORTS (from /home/user/workspace/portability_stress_projects/libfreenect/fakenect/fakenect.c)
+[VERB]   cc_obs [define] fakenect_EXPORTS (from /home/user/workspace/portability_stress_projects/libfreenect/fakenect/parson.c)
+[VERB]   cc_obs [define] fakenect_EXPORTS (from /home/user/workspace/portability_stress_projects/libfreenect/src/registration.c)
+[VERB]   cc_obs [define] freenect_EXPORTS (from /home/user/workspace/portability_stress_projects/libfreenect/src/audio.c)
+[VERB]   cc_obs [define] freenect_EXPORTS (from /home/user/workspace/portability_stress_projects/libfreenect/src/cameras.c)
+[VERB]   cc_obs [define] freenect_EXPORTS (from /home/user/workspace/portability_stress_projects/libfreenect/src/core.c)
+[VERB]   cc_obs [define] freenect_EXPORTS (from /home/user/workspace/portability_stress_projects/libfreenect/src/flags.c)
+[VERB]   cc_obs [define] freenect_EXPORTS (from /home/user/workspace/portability_stress_projects/libfreenect/src/loader.c)
+[VERB]   cc_obs [define] freenect_EXPORTS (from /home/user/workspace/portability_stress_projects/libfreenect/src/registration.c)
+[VERB]   cc_obs [define] freenect_EXPORTS (from /home/user/workspace/portability_stress_projects/libfreenect/src/tilt.c)
+[VERB]   cc_obs [define] freenect_EXPORTS (from /home/user/workspace/portability_stress_projects/libfreenect/src/usb_libusb10.c)
+[VERB]   cc_obs [define] freenect_sync_EXPORTS (from /home/user/workspace/portability_stress_projects/libfreenect/wrappers/c_sync/libfreenect_sync.c)
+[INFO] Found CMakeCache.txt: /tmp/anaport_NcePzG/CMakeCache.txt
+[INFO] CMakeCache.txt: parsed 226 total variables, 91 interesting
+[VERB]   cache [STRING] CMAKE_BUILD_TYPE = 
+[VERB]   cache [FILEPATH] CMAKE_CXX_COMPILER = /usr/bin/c++
+[VERB]   cache [FILEPATH] CMAKE_CXX_COMPILER_AR = /usr/bin/gcc-ar-14
+[VERB]   cache [FILEPATH] CMAKE_CXX_COMPILER_RANLIB = /usr/bin/gcc-ranlib-14
+[VERB]   cache [STRING] CMAKE_CXX_FLAGS = 
+[VERB]   cache [STRING] CMAKE_CXX_FLAGS_DEBUG = -g
+[VERB]   cache [STRING] CMAKE_CXX_FLAGS_MINSIZEREL = -Os -DNDEBUG
+[VERB]   cache [STRING] CMAKE_CXX_FLAGS_RELEASE = -O3 -DNDEBUG
+[VERB]   cache [STRING] CMAKE_CXX_FLAGS_RELWITHDEBINFO = -O2 -g -DNDEBUG
+[VERB]   cache [FILEPATH] CMAKE_C_COMPILER = /usr/bin/cc
+[VERB]   cache [FILEPATH] CMAKE_C_COMPILER_AR = /usr/bin/gcc-ar-14
+[VERB]   cache [FILEPATH] CMAKE_C_COMPILER_RANLIB = /usr/bin/gcc-ranlib-14
+[VERB]   cache [STRING] CMAKE_C_FLAGS = 
+[VERB]   cache [STRING] CMAKE_C_FLAGS_DEBUG = -g
+[VERB]   cache [STRING] CMAKE_C_FLAGS_MINSIZEREL = -Os -DNDEBUG
+[VERB]   cache [STRING] CMAKE_C_FLAGS_RELEASE = -O3 -DNDEBUG
+[VERB]   cache [STRING] CMAKE_C_FLAGS_RELWITHDEBINFO = -O2 -g -DNDEBUG
+[VERB]   cache [STRING] CMAKE_EXE_LINKER_FLAGS = 
+[VERB]   cache [STRING] CMAKE_EXE_LINKER_FLAGS_DEBUG = 
+[VERB]   cache [STRING] CMAKE_EXE_LINKER_FLAGS_MINSIZEREL = 
+[VERB]   cache [STRING] CMAKE_EXE_LINKER_FLAGS_RELEASE = 
+[VERB]   cache [STRING] CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO = 
+[VERB]   cache [STATIC] CMAKE_FIND_PACKAGE_REDIRECTS_DIR = /tmp/anaport_NcePzG/CMakeFiles/pkgRedirects
+[VERB]   cache [PATH] CMAKE_INSTALL_PREFIX = /usr/local
+[VERB]   cache [STRING] CMAKE_SHARED_LINKER_FLAGS = 
+[VERB]   cache [STRING] CMAKE_SHARED_LINKER_FLAGS_DEBUG = 
+[VERB]   cache [STRING] CMAKE_SHARED_LINKER_FLAGS_MINSIZEREL = 
+[VERB]   cache [STRING] CMAKE_SHARED_LINKER_FLAGS_RELEASE = 
+[VERB]   cache [STRING] CMAKE_SHARED_LINKER_FLAGS_RELWITHDEBINFO = 
+[VERB]   cache [STRING] CMAKE_STATIC_LINKER_FLAGS = 
+[VERB]   cache [STRING] CMAKE_STATIC_LINKER_FLAGS_DEBUG = 
+[VERB]   cache [STRING] CMAKE_STATIC_LINKER_FLAGS_MINSIZEREL = 
+[VERB]   cache [STRING] CMAKE_STATIC_LINKER_FLAGS_RELEASE = 
+[VERB]   cache [STRING] CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO = 
+[VERB]   cache [PATH] GLUT_INCLUDE_DIR = GLUT_INCLUDE_DIR-NOTFOUND
+[VERB]   cache [FILEPATH] GLUT_Xi_LIBRARY = GLUT_Xi_LIBRARY-NOTFOUND
+[VERB]   cache [FILEPATH] GLUT_Xmu_LIBRARY = GLUT_Xmu_LIBRARY-NOTFOUND
+[VERB]   cache [FILEPATH] GLUT_glut_LIBRARY = GLUT_glut_LIBRARY-NOTFOUND
+[VERB]   cache [PATH] LIBUSB_1_INCLUDE_DIR = /usr/include/libusb-1.0
+[VERB]   cache [FILEPATH] LIBUSB_1_LIBRARY = /usr/lib/x86_64-linux-gnu/libusb-1.0.so
+[VERB]   cache [PATH] OPENGL_EGL_INCLUDE_DIR = OPENGL_EGL_INCLUDE_DIR-NOTFOUND
+[VERB]   cache [PATH] OPENGL_GLES2_INCLUDE_DIR = OPENGL_GLES2_INCLUDE_DIR-NOTFOUND
+[VERB]   cache [PATH] OPENGL_GLES3_INCLUDE_DIR = OPENGL_GLES3_INCLUDE_DIR-NOTFOUND
+[VERB]   cache [PATH] OPENGL_GLU_INCLUDE_DIR = OPENGL_GLU_INCLUDE_DIR-NOTFOUND
+[VERB]   cache [PATH] OPENGL_GLX_INCLUDE_DIR = OPENGL_GLX_INCLUDE_DIR-NOTFOUND
+[VERB]   cache [PATH] OPENGL_INCLUDE_DIR = OPENGL_INCLUDE_DIR-NOTFOUND
+[VERB]   cache [FILEPATH] OPENGL_egl_LIBRARY = OPENGL_egl_LIBRARY-NOTFOUND
+[VERB]   cache [FILEPATH] OPENGL_gl_LIBRARY = OPENGL_gl_LIBRARY-NOTFOUND
+[VERB]   cache [FILEPATH] OPENGL_gles2_LIBRARY = OPENGL_gles2_LIBRARY-NOTFOUND
+[VERB]   cache [FILEPATH] OPENGL_gles3_LIBRARY = OPENGL_gles3_LIBRARY-NOTFOUND
+[VERB]   cache [FILEPATH] OPENGL_glu_LIBRARY = OPENGL_glu_LIBRARY-NOTFOUND
+[VERB]   cache [FILEPATH] OPENGL_glx_LIBRARY = OPENGL_glx_LIBRARY-NOTFOUND
+[VERB]   cache [FILEPATH] OPENGL_opengl_LIBRARY = OPENGL_opengl_LIBRARY-NOTFOUND
+[VERB]   cache [PATH] OPENGL_xmesa_INCLUDE_DIR = OPENGL_xmesa_INCLUDE_DIR-NOTFOUND
+[VERB]   cache [FILEPATH] PKG_CONFIG_EXECUTABLE = /usr/bin/pkg-config
+[VERB]   cache [STATIC] libfreenect_BINARY_DIR = /tmp/anaport_NcePzG
+[VERB]   cache [STATIC] libfreenect_SOURCE_DIR = /home/user/workspace/portability_stress_projects/libfreenect
+[VERB]   cache [INTERNAL] CMAKE_CACHEFILE_DIR = /tmp/anaport_NcePzG
+[VERB]   cache [INTERNAL] CMAKE_CXX_COMPILER-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_CXX_COMPILER_AR-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_CXX_COMPILER_RANLIB-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_CXX_FLAGS-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_CXX_FLAGS_DEBUG-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_CXX_FLAGS_MINSIZEREL-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_CXX_FLAGS_RELEASE-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_CXX_FLAGS_RELWITHDEBINFO-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_C_COMPILER-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_C_COMPILER_AR-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_C_COMPILER_RANLIB-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_C_FLAGS-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_C_FLAGS_DEBUG-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_C_FLAGS_MINSIZEREL-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_C_FLAGS_RELEASE-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_C_FLAGS_RELWITHDEBINFO-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_EXE_LINKER_FLAGS-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_EXE_LINKER_FLAGS_DEBUG-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_EXE_LINKER_FLAGS_MINSIZEREL-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_EXE_LINKER_FLAGS_RELEASE-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_GENERATOR = Unix Makefiles
+[VERB]   cache [INTERNAL] CMAKE_ROOT = /usr/share/cmake-3.31
+[VERB]   cache [INTERNAL] CMAKE_SHARED_LINKER_FLAGS-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_SHARED_LINKER_FLAGS_DEBUG-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_SHARED_LINKER_FLAGS_MINSIZEREL-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_SHARED_LINKER_FLAGS_RELEASE-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_SHARED_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_STATIC_LINKER_FLAGS-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_STATIC_LINKER_FLAGS_DEBUG-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_STATIC_LINKER_FLAGS_MINSIZEREL-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_STATIC_LINKER_FLAGS_RELEASE-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED = 1
+[INFO] Analyzing project: libfreenect, targets: 11 (excluded service: 0)
+[VERB]   Checking target: fakenect [SHARED_LIBRARY]
+[VERB]   Checking target: fakenect-record [EXECUTABLE]
+[VERB]   Checking target: freenect [SHARED_LIBRARY]
+[VERB]   Checking target: freenect-camtest [EXECUTABLE]
+[VERB]   Checking target: freenect-regtest [EXECUTABLE]
+[VERB]   Checking target: freenect-tiltdemo [EXECUTABLE]
+[VERB]   Checking target: freenect-wavrecord [EXECUTABLE]
+[VERB]   Checking target: freenect_sync [SHARED_LIBRARY]
+[VERB]   Checking target: freenect_sync_static [STATIC_LIBRARY]
+[VERB]   Checking target: freenectstatic [STATIC_LIBRARY]
+[VERB]   Checking target: uninstall [UTILITY]
+[INFO] Analysis complete: 0 errors, 14 warnings, 15 info, 9 dependency edges
+[INFO] Written: /home/user/workspace/analyze-portability/examples/stress_projects/libfreenect/report.json
+[INFO] Written: /home/user/workspace/analyze-portability/examples/stress_projects/libfreenect/report.md
+[INFO] Written: /home/user/workspace/analyze-portability/examples/stress_projects/libfreenect/dependencies.dot
+
+=== Analysis complete ===
+Project: libfreenect
+Targets: 11
+Findings: 29 total (0 errors, 14 warnings, 15 info)
+Data sources:
+  CMake File API: parsed
+  compile_commands.json: 27 entries, 87 observations
+  CMakeCache.txt: 226 variables parsed
+Reports written to: /home/user/workspace/analyze-portability/examples/stress_projects/libfreenect
+  report.json       — machine-readable portability analysis
+  report.md         — Markdown report
+  dependencies.dot  — Graphviz dependency graph
+[VERB] Removed build directory: /tmp/anaport_NcePzG

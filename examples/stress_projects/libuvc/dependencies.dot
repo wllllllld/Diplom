@@ -1,0 +1,11 @@
+// analyze-portability: dependency graph for project 'libuvc'
+digraph dependencies {
+  graph [rankdir=LR, label="libuvc — Dependency Graph", fontsize=14];
+  node [shape=box, style=filled, fontname="Helvetica"];
+
+  "example" [label="example\n[EXECUTABLE]", fillcolor="lightblue"];
+  "uvc" [label="uvc\n[SHARED_LIBRARY]\n⚠ 2 warnings", fillcolor="lightyellow"];
+  "uvc_static" [label="uvc_static\n[STATIC_LIBRARY]", fillcolor="lightgreen"];
+
+  "example" -> "uvc";
+}

@@ -1,0 +1,12 @@
+// analyze-portability: dependency graph for project 'SimpleInternal'
+digraph dependencies {
+  graph [rankdir=LR, label="SimpleInternal — Dependency Graph", fontsize=14];
+  node [shape=box, style=filled, fontname="Helvetica"];
+
+  "mathlib" [label="mathlib\n[STATIC_LIBRARY]", fillcolor="lightgreen"];
+  "simple_app" [label="simple_app\n[EXECUTABLE]", fillcolor="lightblue"];
+  "strutils" [label="strutils\n[SHARED_LIBRARY]", fillcolor="lightyellow"];
+
+  "simple_app" -> "mathlib";
+  "simple_app" -> "strutils";
+}

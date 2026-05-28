@@ -1,0 +1,211 @@
+[INFO] === analyze-portability v1.1.0 ===
+[INFO] Source: /home/user/workspace/portability_stress_projects/libuvc
+[INFO] Output: /home/user/workspace/analyze-portability/examples/stress_projects/libuvc
+[VERB] Source dir : /home/user/workspace/portability_stress_projects/libuvc
+[VERB] Output dir : /home/user/workspace/analyze-portability/examples/stress_projects/libuvc
+[VERB] Build  dir : /tmp/anaport_7ehI2W
+[VERB] Wrote File API query file: /tmp/anaport_7ehI2W/.cmake/api/v1/query/codemodel-v2
+[INFO] Running: cmake -S /home/user/workspace/portability_stress_projects/libuvc -B /tmp/anaport_7ehI2W
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- The C compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- No build type selected, default to Release
+-- No target type selected, default to both shared and static library
+-- Found PkgConfig: /usr/bin/pkg-config (found version "1.8.1")
+-- Checking for module 'libusb-1.0'
+--   Found libusb-1.0, version 1.0.28
+-- libusb-1.0 found using pkgconfig
+-- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "62")
+-- Found JPEG library using standard module
+CMake Warning (dev) at /usr/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake:441 (message):
+  The package name passed to `find_package_handle_standard_args` (JPEG) does
+  not match the name of the calling package (JpegPkg).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  cmake/FindJpegPkg.cmake:58 (find_package_handle_standard_args)
+  CMakeLists.txt:45 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so
+-- Building libuvc with JPEG support.
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Configuring done (0.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /tmp/anaport_7ehI2W
+[INFO] cmake configure succeeded
+[VERB] Reading File API reply dir: /tmp/anaport_7ehI2W/.cmake/api/v1/reply
+[VERB] Index file: index-2026-05-26T22-57-12-0714.json
+[VERB] Codemodel file: codemodel-v2-3d2ccb56fb0e2835a315.json
+[VERB]   Parsed target: example [EXECUTABLE] compileGroups=1 linkFrags=4 deps=1
+[VERB]   Parsed target: uvc [SHARED_LIBRARY] compileGroups=1 linkFrags=3 deps=0
+[VERB]   Parsed target: uvc_static [STATIC_LIBRARY] compileGroups=1 linkFrags=0 deps=0
+[INFO] Parsed project: libuvc (cmake 3.31.6), targets: 3
+[INFO] Found compile_commands.json: /tmp/anaport_7ehI2W/compile_commands.json
+[INFO] compile_commands.json: parsed 19 entries, 67 observations
+[VERB]   cc_obs [compiler_flag] -fPIC (from /home/user/workspace/portability_stress_projects/libuvc/src/ctrl-gen.c)
+[VERB]   cc_obs [compiler_flag] -fPIC (from /home/user/workspace/portability_stress_projects/libuvc/src/ctrl.c)
+[VERB]   cc_obs [compiler_flag] -fPIC (from /home/user/workspace/portability_stress_projects/libuvc/src/device.c)
+[VERB]   cc_obs [compiler_flag] -fPIC (from /home/user/workspace/portability_stress_projects/libuvc/src/diag.c)
+[VERB]   cc_obs [compiler_flag] -fPIC (from /home/user/workspace/portability_stress_projects/libuvc/src/frame-mjpeg.c)
+[VERB]   cc_obs [compiler_flag] -fPIC (from /home/user/workspace/portability_stress_projects/libuvc/src/frame.c)
+[VERB]   cc_obs [compiler_flag] -fPIC (from /home/user/workspace/portability_stress_projects/libuvc/src/init.c)
+[VERB]   cc_obs [compiler_flag] -fPIC (from /home/user/workspace/portability_stress_projects/libuvc/src/misc.c)
+[VERB]   cc_obs [compiler_flag] -fPIC (from /home/user/workspace/portability_stress_projects/libuvc/src/stream.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libuvc/include (from /home/user/workspace/portability_stress_projects/libuvc/src/ctrl-gen.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libuvc/include (from /home/user/workspace/portability_stress_projects/libuvc/src/ctrl.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libuvc/include (from /home/user/workspace/portability_stress_projects/libuvc/src/device.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libuvc/include (from /home/user/workspace/portability_stress_projects/libuvc/src/diag.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libuvc/include (from /home/user/workspace/portability_stress_projects/libuvc/src/example.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libuvc/include (from /home/user/workspace/portability_stress_projects/libuvc/src/frame-mjpeg.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libuvc/include (from /home/user/workspace/portability_stress_projects/libuvc/src/frame.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libuvc/include (from /home/user/workspace/portability_stress_projects/libuvc/src/init.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libuvc/include (from /home/user/workspace/portability_stress_projects/libuvc/src/misc.c)
+[VERB]   cc_obs [include] /home/user/workspace/portability_stress_projects/libuvc/include (from /home/user/workspace/portability_stress_projects/libuvc/src/stream.c)
+[VERB]   cc_obs [absolute_path] /home/user/workspace/portability_stress_projects/libuvc/src/ctrl-gen.c (from /home/user/workspace/portability_stress_projects/libuvc/src/ctrl-gen.c)
+[VERB]   cc_obs [absolute_path] /home/user/workspace/portability_stress_projects/libuvc/src/ctrl.c (from /home/user/workspace/portability_stress_projects/libuvc/src/ctrl.c)
+[VERB]   cc_obs [absolute_path] /home/user/workspace/portability_stress_projects/libuvc/src/device.c (from /home/user/workspace/portability_stress_projects/libuvc/src/device.c)
+[VERB]   cc_obs [absolute_path] /home/user/workspace/portability_stress_projects/libuvc/src/diag.c (from /home/user/workspace/portability_stress_projects/libuvc/src/diag.c)
+[VERB]   cc_obs [absolute_path] /home/user/workspace/portability_stress_projects/libuvc/src/example.c (from /home/user/workspace/portability_stress_projects/libuvc/src/example.c)
+[VERB]   cc_obs [absolute_path] /home/user/workspace/portability_stress_projects/libuvc/src/frame-mjpeg.c (from /home/user/workspace/portability_stress_projects/libuvc/src/frame-mjpeg.c)
+[VERB]   cc_obs [absolute_path] /home/user/workspace/portability_stress_projects/libuvc/src/frame.c (from /home/user/workspace/portability_stress_projects/libuvc/src/frame.c)
+[VERB]   cc_obs [absolute_path] /home/user/workspace/portability_stress_projects/libuvc/src/init.c (from /home/user/workspace/portability_stress_projects/libuvc/src/init.c)
+[VERB]   cc_obs [absolute_path] /home/user/workspace/portability_stress_projects/libuvc/src/misc.c (from /home/user/workspace/portability_stress_projects/libuvc/src/misc.c)
+[VERB]   cc_obs [absolute_path] /home/user/workspace/portability_stress_projects/libuvc/src/stream.c (from /home/user/workspace/portability_stress_projects/libuvc/src/stream.c)
+[VERB]   cc_obs [include] /tmp/anaport_7ehI2W/include (from /home/user/workspace/portability_stress_projects/libuvc/src/ctrl-gen.c)
+[VERB]   cc_obs [include] /tmp/anaport_7ehI2W/include (from /home/user/workspace/portability_stress_projects/libuvc/src/ctrl.c)
+[VERB]   cc_obs [include] /tmp/anaport_7ehI2W/include (from /home/user/workspace/portability_stress_projects/libuvc/src/device.c)
+[VERB]   cc_obs [include] /tmp/anaport_7ehI2W/include (from /home/user/workspace/portability_stress_projects/libuvc/src/diag.c)
+[VERB]   cc_obs [include] /tmp/anaport_7ehI2W/include (from /home/user/workspace/portability_stress_projects/libuvc/src/example.c)
+[VERB]   cc_obs [include] /tmp/anaport_7ehI2W/include (from /home/user/workspace/portability_stress_projects/libuvc/src/frame-mjpeg.c)
+[VERB]   cc_obs [include] /tmp/anaport_7ehI2W/include (from /home/user/workspace/portability_stress_projects/libuvc/src/frame.c)
+[VERB]   cc_obs [include] /tmp/anaport_7ehI2W/include (from /home/user/workspace/portability_stress_projects/libuvc/src/init.c)
+[VERB]   cc_obs [include] /tmp/anaport_7ehI2W/include (from /home/user/workspace/portability_stress_projects/libuvc/src/misc.c)
+[VERB]   cc_obs [include] /tmp/anaport_7ehI2W/include (from /home/user/workspace/portability_stress_projects/libuvc/src/stream.c)
+[VERB]   cc_obs [include] /usr/include/libusb-1.0 (from /home/user/workspace/portability_stress_projects/libuvc/src/ctrl-gen.c)
+[VERB]   cc_obs [include] /usr/include/libusb-1.0 (from /home/user/workspace/portability_stress_projects/libuvc/src/ctrl.c)
+[VERB]   cc_obs [include] /usr/include/libusb-1.0 (from /home/user/workspace/portability_stress_projects/libuvc/src/device.c)
+[VERB]   cc_obs [include] /usr/include/libusb-1.0 (from /home/user/workspace/portability_stress_projects/libuvc/src/diag.c)
+[VERB]   cc_obs [include] /usr/include/libusb-1.0 (from /home/user/workspace/portability_stress_projects/libuvc/src/frame-mjpeg.c)
+[VERB]   cc_obs [include] /usr/include/libusb-1.0 (from /home/user/workspace/portability_stress_projects/libuvc/src/frame.c)
+[VERB]   cc_obs [include] /usr/include/libusb-1.0 (from /home/user/workspace/portability_stress_projects/libuvc/src/init.c)
+[VERB]   cc_obs [include] /usr/include/libusb-1.0 (from /home/user/workspace/portability_stress_projects/libuvc/src/misc.c)
+[VERB]   cc_obs [include] /usr/include/libusb-1.0 (from /home/user/workspace/portability_stress_projects/libuvc/src/stream.c)
+[VERB]   cc_obs [define] NDEBUG (from /home/user/workspace/portability_stress_projects/libuvc/src/ctrl-gen.c)
+[VERB]   cc_obs [define] NDEBUG (from /home/user/workspace/portability_stress_projects/libuvc/src/ctrl.c)
+[VERB]   cc_obs [define] NDEBUG (from /home/user/workspace/portability_stress_projects/libuvc/src/device.c)
+[VERB]   cc_obs [define] NDEBUG (from /home/user/workspace/portability_stress_projects/libuvc/src/diag.c)
+[VERB]   cc_obs [define] NDEBUG (from /home/user/workspace/portability_stress_projects/libuvc/src/example.c)
+[VERB]   cc_obs [define] NDEBUG (from /home/user/workspace/portability_stress_projects/libuvc/src/frame-mjpeg.c)
+[VERB]   cc_obs [define] NDEBUG (from /home/user/workspace/portability_stress_projects/libuvc/src/frame.c)
+[VERB]   cc_obs [define] NDEBUG (from /home/user/workspace/portability_stress_projects/libuvc/src/init.c)
+[VERB]   cc_obs [define] NDEBUG (from /home/user/workspace/portability_stress_projects/libuvc/src/misc.c)
+[VERB]   cc_obs [define] NDEBUG (from /home/user/workspace/portability_stress_projects/libuvc/src/stream.c)
+[VERB]   cc_obs [define] uvc_EXPORTS (from /home/user/workspace/portability_stress_projects/libuvc/src/ctrl-gen.c)
+[VERB]   cc_obs [define] uvc_EXPORTS (from /home/user/workspace/portability_stress_projects/libuvc/src/ctrl.c)
+[VERB]   cc_obs [define] uvc_EXPORTS (from /home/user/workspace/portability_stress_projects/libuvc/src/device.c)
+[VERB]   cc_obs [define] uvc_EXPORTS (from /home/user/workspace/portability_stress_projects/libuvc/src/diag.c)
+[VERB]   cc_obs [define] uvc_EXPORTS (from /home/user/workspace/portability_stress_projects/libuvc/src/frame-mjpeg.c)
+[VERB]   cc_obs [define] uvc_EXPORTS (from /home/user/workspace/portability_stress_projects/libuvc/src/frame.c)
+[VERB]   cc_obs [define] uvc_EXPORTS (from /home/user/workspace/portability_stress_projects/libuvc/src/init.c)
+[VERB]   cc_obs [define] uvc_EXPORTS (from /home/user/workspace/portability_stress_projects/libuvc/src/misc.c)
+[VERB]   cc_obs [define] uvc_EXPORTS (from /home/user/workspace/portability_stress_projects/libuvc/src/stream.c)
+[INFO] Found CMakeCache.txt: /tmp/anaport_7ehI2W/CMakeCache.txt
+[INFO] CMakeCache.txt: parsed 218 total variables, 61 interesting
+[VERB]   cache [STRING] CMAKE_BUILD_TYPE = Release
+[VERB]   cache [FILEPATH] CMAKE_C_COMPILER = /usr/bin/cc
+[VERB]   cache [FILEPATH] CMAKE_C_COMPILER_AR = /usr/bin/gcc-ar-14
+[VERB]   cache [FILEPATH] CMAKE_C_COMPILER_RANLIB = /usr/bin/gcc-ranlib-14
+[VERB]   cache [STRING] CMAKE_C_FLAGS = 
+[VERB]   cache [STRING] CMAKE_C_FLAGS_DEBUG = -g
+[VERB]   cache [STRING] CMAKE_C_FLAGS_MINSIZEREL = -Os -DNDEBUG
+[VERB]   cache [STRING] CMAKE_C_FLAGS_RELEASE = -O3 -DNDEBUG
+[VERB]   cache [STRING] CMAKE_C_FLAGS_RELWITHDEBINFO = -O2 -g -DNDEBUG
+[VERB]   cache [STRING] CMAKE_EXE_LINKER_FLAGS = 
+[VERB]   cache [STRING] CMAKE_EXE_LINKER_FLAGS_DEBUG = 
+[VERB]   cache [STRING] CMAKE_EXE_LINKER_FLAGS_MINSIZEREL = 
+[VERB]   cache [STRING] CMAKE_EXE_LINKER_FLAGS_RELEASE = 
+[VERB]   cache [STRING] CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO = 
+[VERB]   cache [STATIC] CMAKE_FIND_PACKAGE_REDIRECTS_DIR = /tmp/anaport_7ehI2W/CMakeFiles/pkgRedirects
+[VERB]   cache [PATH] CMAKE_INSTALL_PREFIX = /usr/local
+[VERB]   cache [STRING] CMAKE_SHARED_LINKER_FLAGS = 
+[VERB]   cache [STRING] CMAKE_SHARED_LINKER_FLAGS_DEBUG = 
+[VERB]   cache [STRING] CMAKE_SHARED_LINKER_FLAGS_MINSIZEREL = 
+[VERB]   cache [STRING] CMAKE_SHARED_LINKER_FLAGS_RELEASE = 
+[VERB]   cache [STRING] CMAKE_SHARED_LINKER_FLAGS_RELWITHDEBINFO = 
+[VERB]   cache [STRING] CMAKE_STATIC_LINKER_FLAGS = 
+[VERB]   cache [STRING] CMAKE_STATIC_LINKER_FLAGS_DEBUG = 
+[VERB]   cache [STRING] CMAKE_STATIC_LINKER_FLAGS_MINSIZEREL = 
+[VERB]   cache [STRING] CMAKE_STATIC_LINKER_FLAGS_RELEASE = 
+[VERB]   cache [STRING] CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO = 
+[VERB]   cache [PATH] JPEG_INCLUDE_DIR = /usr/include
+[VERB]   cache [FILEPATH] LibUSB_LIBRARY = /usr/lib/x86_64-linux-gnu/libusb-1.0.so
+[VERB]   cache [FILEPATH] PKG_CONFIG_EXECUTABLE = /usr/bin/pkg-config
+[VERB]   cache [STATIC] libuvc_BINARY_DIR = /tmp/anaport_7ehI2W
+[VERB]   cache [STATIC] libuvc_SOURCE_DIR = /home/user/workspace/portability_stress_projects/libuvc
+[VERB]   cache [INTERNAL] CMAKE_CACHEFILE_DIR = /tmp/anaport_7ehI2W
+[VERB]   cache [INTERNAL] CMAKE_C_COMPILER-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_C_COMPILER_AR-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_C_COMPILER_RANLIB-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_C_FLAGS-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_C_FLAGS_DEBUG-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_C_FLAGS_MINSIZEREL-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_C_FLAGS_RELEASE-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_C_FLAGS_RELWITHDEBINFO-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_EXE_LINKER_FLAGS-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_EXE_LINKER_FLAGS_DEBUG-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_EXE_LINKER_FLAGS_MINSIZEREL-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_EXE_LINKER_FLAGS_RELEASE-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_GENERATOR = Unix Makefiles
+[VERB]   cache [INTERNAL] CMAKE_ROOT = /usr/share/cmake-3.31
+[VERB]   cache [INTERNAL] CMAKE_SHARED_LINKER_FLAGS-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_SHARED_LINKER_FLAGS_DEBUG-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_SHARED_LINKER_FLAGS_MINSIZEREL-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_SHARED_LINKER_FLAGS_RELEASE-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_SHARED_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_STATIC_LINKER_FLAGS-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_STATIC_LINKER_FLAGS_DEBUG-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_STATIC_LINKER_FLAGS_MINSIZEREL-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_STATIC_LINKER_FLAGS_RELEASE-ADVANCED = 1
+[VERB]   cache [INTERNAL] CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED = 1
+[VERB]   cache [INTERNAL] LibUSB_INCLUDE_DIRS = /usr/include/libusb-1.0
+[VERB]   cache [INTERNAL] LibUSB_LIBRARIES = usb-1.0
+[VERB]   cache [INTERNAL] LibUSB_STATIC_INCLUDE_DIRS = /usr/include/libusb-1.0
+[VERB]   cache [INTERNAL] LibUSB_STATIC_LIBRARIES = usb-1.0;udev
+[INFO] Analyzing project: libuvc, targets: 3 (excluded service: 0)
+[VERB]   Checking target: example [EXECUTABLE]
+[VERB]   Checking target: uvc [SHARED_LIBRARY]
+[VERB]   Checking target: uvc_static [STATIC_LIBRARY]
+[INFO] Analysis complete: 0 errors, 2 warnings, 10 info, 1 dependency edges
+[INFO] Written: /home/user/workspace/analyze-portability/examples/stress_projects/libuvc/report.json
+[INFO] Written: /home/user/workspace/analyze-portability/examples/stress_projects/libuvc/report.md
+[INFO] Written: /home/user/workspace/analyze-portability/examples/stress_projects/libuvc/dependencies.dot
+
+=== Analysis complete ===
+Project: libuvc
+Targets: 3
+Findings: 12 total (0 errors, 2 warnings, 10 info)
+Data sources:
+  CMake File API: parsed
+  compile_commands.json: 19 entries, 67 observations
+  CMakeCache.txt: 218 variables parsed
+Reports written to: /home/user/workspace/analyze-portability/examples/stress_projects/libuvc
+  report.json       — machine-readable portability analysis
+  report.md         — Markdown report
+  dependencies.dot  — Graphviz dependency graph
+[VERB] Removed build directory: /tmp/anaport_7ehI2W

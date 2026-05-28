@@ -1,0 +1,10 @@
+// analyze-portability: dependency graph for project 'FindPackageLike'
+digraph dependencies {
+  graph [rankdir=LR, label="FindPackageLike — Dependency Graph", fontsize=14];
+  node [shape=box, style=filled, fontname="Helvetica"];
+
+  "net_app" [label="net_app\n[EXECUTABLE]", fillcolor="lightblue"];
+  "netlib" [label="netlib\n[STATIC_LIBRARY]", fillcolor="lightgreen"];
+
+  "net_app" -> "netlib";
+}

@@ -1,0 +1,201 @@
+{
+  "cmake_version": "3.31.6",
+  "data_sources": {
+    "cmake_cache": {
+      "found": true,
+      "interesting_variables": 70,
+      "parsed": true,
+      "variable_count": 200
+    },
+    "compile_commands": {
+      "entry_count": 2,
+      "found": true,
+      "observations": 6,
+      "parsed": true
+    }
+  },
+  "dependency_edges": [
+    {
+      "from": "xmltest",
+      "kind": "internal",
+      "to": "tinyxml2"
+    }
+  ],
+  "findings": [
+    {
+      "category": "absolute_path",
+      "field": "include_path",
+      "message": "Project-local include path in compile_commands.json: /home/user/workspace/real_cmake_projects/tinyxml2",
+      "recommendation": "This path is within the project source or build tree and is expected.",
+      "severity": "info",
+      "source": "compile_commands",
+      "target": "",
+      "value": "/home/user/workspace/real_cmake_projects/tinyxml2"
+    },
+    {
+      "category": "cache_variable",
+      "field": "cmake_cache_variable",
+      "message": "Compiler: CMAKE_CXX_COMPILER = /usr/bin/c++",
+      "recommendation": "Ensure this compiler is available on all target build environments.",
+      "severity": "info",
+      "source": "cmake_cache",
+      "target": "",
+      "value": "CMAKE_CXX_COMPILER=/usr/bin/c++"
+    },
+    {
+      "category": "cache_variable",
+      "field": "cmake_cache_variable",
+      "message": "Compiler: CMAKE_C_COMPILER = /usr/bin/cc",
+      "recommendation": "Ensure this compiler is available on all target build environments.",
+      "severity": "info",
+      "source": "cmake_cache",
+      "target": "",
+      "value": "CMAKE_C_COMPILER=/usr/bin/cc"
+    },
+    {
+      "category": "cache_variable",
+      "field": "cmake_cache_variable",
+      "message": "Install prefix: /usr/local",
+      "recommendation": "CMAKE_INSTALL_PREFIX is /usr/local. Ensure this is appropriate for all target environments.",
+      "severity": "info",
+      "source": "cmake_cache",
+      "target": "",
+      "value": "CMAKE_INSTALL_PREFIX=/usr/local"
+    },
+    {
+      "category": "absolute_path",
+      "field": "include_path",
+      "message": "Project-local absolute include path (resolved BUILD_INTERFACE): /home/user/workspace/real_cmake_projects/tinyxml2",
+      "recommendation": "This is typical for BUILD_INTERFACE generator expressions and is generally fine. [2 targets: tinyxml2, xmltest]",
+      "severity": "info",
+      "source": "file_api",
+      "target": "",
+      "value": "/home/user/workspace/real_cmake_projects/tinyxml2"
+    }
+  ],
+  "generated_at": "2026-05-26T22:02:24Z",
+  "project_name": "tinyxml2",
+  "source_dir": "/home/user/workspace/real_cmake_projects/tinyxml2",
+  "summary": {
+    "dependency_edges": 1,
+    "emitted_findings": 5,
+    "errors": 0,
+    "findings_by_category": {
+      "absolute_path": 2,
+      "cache_variable": 3
+    },
+    "findings_by_source": {
+      "cmake_cache": 3,
+      "compile_commands": 1,
+      "file_api": 1
+    },
+    "hidden_service_target_names": [
+      "Continuous",
+      "ContinuousBuild",
+      "ContinuousConfigure",
+      "ContinuousCoverage",
+      "ContinuousMemCheck",
+      "ContinuousStart",
+      "ContinuousSubmit",
+      "ContinuousTest",
+      "ContinuousUpdate",
+      "Experimental",
+      "ExperimentalBuild",
+      "ExperimentalConfigure",
+      "ExperimentalCoverage",
+      "ExperimentalMemCheck",
+      "ExperimentalStart",
+      "ExperimentalSubmit",
+      "ExperimentalTest",
+      "ExperimentalUpdate",
+      "Nightly",
+      "NightlyBuild",
+      "NightlyConfigure",
+      "NightlyCoverage",
+      "NightlyMemCheck",
+      "NightlyMemoryCheck",
+      "NightlyStart",
+      "NightlySubmit",
+      "NightlyTest",
+      "NightlyUpdate"
+    ],
+    "hidden_service_targets": 28,
+    "info": 5,
+    "severity_filter": "info",
+    "total_findings": 5,
+    "total_targets": 2,
+    "warnings": 0
+  },
+  "targets": [
+    {
+      "artifacts": [
+        "libtinyxml2.a"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "_FILE_OFFSET_BITS=64"
+          ],
+          "includes": [
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/real_cmake_projects/tinyxml2"
+            }
+          ],
+          "language": "CXX"
+        }
+      ],
+      "dependencies": [],
+      "id": "tinyxml2::@6890427a1f51a3e7e1df",
+      "link_fragments": [],
+      "name": "tinyxml2",
+      "source_dir": ".",
+      "sources": [
+        "tinyxml2.cpp",
+        "tinyxml2.h"
+      ],
+      "type": "STATIC_LIBRARY"
+    },
+    {
+      "artifacts": [
+        "xmltest"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "_FILE_OFFSET_BITS=64"
+          ],
+          "includes": [
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/real_cmake_projects/tinyxml2"
+            }
+          ],
+          "language": "CXX"
+        }
+      ],
+      "dependencies": [
+        "tinyxml2::@6890427a1f51a3e7e1df"
+      ],
+      "id": "xmltest::@6890427a1f51a3e7e1df",
+      "link_fragments": [
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "libtinyxml2.a",
+          "role": "libraries"
+        }
+      ],
+      "name": "xmltest",
+      "source_dir": ".",
+      "sources": [
+        "xmltest.cpp"
+      ],
+      "type": "EXECUTABLE"
+    }
+  ],
+  "tool": "analyze-portability",
+  "tool_version": "1.1.0"
+}

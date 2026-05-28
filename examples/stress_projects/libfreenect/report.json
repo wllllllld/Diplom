@@ -1,0 +1,943 @@
+{
+  "cmake_version": "3.31.6",
+  "data_sources": {
+    "cmake_cache": {
+      "found": true,
+      "interesting_variables": 91,
+      "parsed": true,
+      "variable_count": 226
+    },
+    "compile_commands": {
+      "entry_count": 27,
+      "found": true,
+      "observations": 87,
+      "parsed": true
+    }
+  },
+  "dependency_edges": [
+    {
+      "from": "fakenect-record",
+      "kind": "internal",
+      "to": "freenect"
+    },
+    {
+      "from": "freenect-camtest",
+      "kind": "internal",
+      "to": "freenect"
+    },
+    {
+      "from": "freenect-regtest",
+      "kind": "internal",
+      "to": "freenect"
+    },
+    {
+      "from": "freenect-regtest",
+      "kind": "internal",
+      "to": "freenect_sync"
+    },
+    {
+      "from": "freenect-tiltdemo",
+      "kind": "internal",
+      "to": "freenect"
+    },
+    {
+      "from": "freenect-tiltdemo",
+      "kind": "internal",
+      "to": "freenect_sync"
+    },
+    {
+      "from": "freenect-wavrecord",
+      "kind": "internal",
+      "to": "freenect"
+    },
+    {
+      "from": "freenect_sync",
+      "kind": "internal",
+      "to": "freenect"
+    },
+    {
+      "from": "freenect_sync_static",
+      "kind": "internal",
+      "to": "freenect"
+    }
+  ],
+  "findings": [
+    {
+      "category": "platform_specific_library",
+      "field": "link_library",
+      "message": "Platform-specific or OS-dependent library: m",
+      "recommendation": "Wrap in platform checks (if(UNIX), if(APPLE), if(WIN32)) or use find_package(Threads), find_library(), etc.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "fakenect",
+      "value": "-lm"
+    },
+    {
+      "category": "platform_specific_library",
+      "field": "link_library",
+      "message": "Platform-specific or OS-dependent library: m",
+      "recommendation": "Wrap in platform checks (if(UNIX), if(APPLE), if(WIN32)) or use find_package(Threads), find_library(), etc.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "fakenect-record",
+      "value": "-lm"
+    },
+    {
+      "category": "absolute_path",
+      "field": "link_library",
+      "message": "Absolute path to library (possibly project-local): /usr/lib/x86_64-linux-gnu/libusb-1.0.so",
+      "recommendation": "Ensure this path is valid on all target systems.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "fakenect-record",
+      "value": "/usr/lib/x86_64-linux-gnu/libusb-1.0.so"
+    },
+    {
+      "category": "absolute_path",
+      "field": "link_library",
+      "message": "Absolute path to library (possibly project-local): /usr/lib/x86_64-linux-gnu/libusb-1.0.so",
+      "recommendation": "Ensure this path is valid on all target systems.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "freenect",
+      "value": "/usr/lib/x86_64-linux-gnu/libusb-1.0.so"
+    },
+    {
+      "category": "absolute_path",
+      "field": "link_library",
+      "message": "Absolute path to library (possibly project-local): /usr/lib/x86_64-linux-gnu/libusb-1.0.so",
+      "recommendation": "Ensure this path is valid on all target systems.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "freenect-camtest",
+      "value": "/usr/lib/x86_64-linux-gnu/libusb-1.0.so"
+    },
+    {
+      "category": "platform_specific_library",
+      "field": "link_library",
+      "message": "Platform-specific or OS-dependent library: m",
+      "recommendation": "Wrap in platform checks (if(UNIX), if(APPLE), if(WIN32)) or use find_package(Threads), find_library(), etc.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "freenect-regtest",
+      "value": "-lm"
+    },
+    {
+      "category": "absolute_path",
+      "field": "link_library",
+      "message": "Absolute path to library (possibly project-local): /usr/lib/x86_64-linux-gnu/libusb-1.0.so",
+      "recommendation": "Ensure this path is valid on all target systems.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "freenect-regtest",
+      "value": "/usr/lib/x86_64-linux-gnu/libusb-1.0.so"
+    },
+    {
+      "category": "platform_specific_library",
+      "field": "link_library",
+      "message": "Platform-specific or OS-dependent library: pthread",
+      "recommendation": "Wrap in platform checks (if(UNIX), if(APPLE), if(WIN32)) or use find_package(Threads), find_library(), etc.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "freenect-regtest",
+      "value": "-lpthread"
+    },
+    {
+      "category": "platform_specific_library",
+      "field": "link_library",
+      "message": "Platform-specific or OS-dependent library: m",
+      "recommendation": "Wrap in platform checks (if(UNIX), if(APPLE), if(WIN32)) or use find_package(Threads), find_library(), etc.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "freenect-tiltdemo",
+      "value": "-lm"
+    },
+    {
+      "category": "absolute_path",
+      "field": "link_library",
+      "message": "Absolute path to library (possibly project-local): /usr/lib/x86_64-linux-gnu/libusb-1.0.so",
+      "recommendation": "Ensure this path is valid on all target systems.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "freenect-tiltdemo",
+      "value": "/usr/lib/x86_64-linux-gnu/libusb-1.0.so"
+    },
+    {
+      "category": "platform_specific_library",
+      "field": "link_library",
+      "message": "Platform-specific or OS-dependent library: pthread",
+      "recommendation": "Wrap in platform checks (if(UNIX), if(APPLE), if(WIN32)) or use find_package(Threads), find_library(), etc.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "freenect-tiltdemo",
+      "value": "-lpthread"
+    },
+    {
+      "category": "absolute_path",
+      "field": "link_library",
+      "message": "Absolute path to library (possibly project-local): /usr/lib/x86_64-linux-gnu/libusb-1.0.so",
+      "recommendation": "Ensure this path is valid on all target systems.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "freenect-wavrecord",
+      "value": "/usr/lib/x86_64-linux-gnu/libusb-1.0.so"
+    },
+    {
+      "category": "platform_specific_library",
+      "field": "link_library",
+      "message": "Platform-specific or OS-dependent library: pthread",
+      "recommendation": "Wrap in platform checks (if(UNIX), if(APPLE), if(WIN32)) or use find_package(Threads), find_library(), etc.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "freenect_sync",
+      "value": "-lpthread"
+    },
+    {
+      "category": "absolute_path",
+      "field": "link_library",
+      "message": "Absolute path to library (possibly project-local): /usr/lib/x86_64-linux-gnu/libusb-1.0.so",
+      "recommendation": "Ensure this path is valid on all target systems.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "freenect_sync",
+      "value": "/usr/lib/x86_64-linux-gnu/libusb-1.0.so"
+    },
+    {
+      "category": "compile_command",
+      "field": "compile_flag",
+      "message": "Non-portable compile flag in compile_commands.json: -fPIC",
+      "recommendation": "Check portability on all target platforms.",
+      "severity": "info",
+      "source": "compile_commands",
+      "target": "",
+      "value": "-fPIC"
+    },
+    {
+      "category": "absolute_path",
+      "field": "include_path",
+      "message": "Project-local include path in compile_commands.json: /home/user/workspace/portability_stress_projects/libfreenect/examples/../wrappers/c_sync",
+      "recommendation": "This path is within the project source or build tree and is expected.",
+      "severity": "info",
+      "source": "compile_commands",
+      "target": "",
+      "value": "/home/user/workspace/portability_stress_projects/libfreenect/examples/../wrappers/c_sync"
+    },
+    {
+      "category": "absolute_path",
+      "field": "include_path",
+      "message": "Project-local include path in compile_commands.json: /home/user/workspace/portability_stress_projects/libfreenect/fakenect/../src",
+      "recommendation": "This path is within the project source or build tree and is expected.",
+      "severity": "info",
+      "source": "compile_commands",
+      "target": "",
+      "value": "/home/user/workspace/portability_stress_projects/libfreenect/fakenect/../src"
+    },
+    {
+      "category": "absolute_path",
+      "field": "include_path",
+      "message": "Project-local include path in compile_commands.json: /home/user/workspace/portability_stress_projects/libfreenect/include",
+      "recommendation": "This path is within the project source or build tree and is expected.",
+      "severity": "info",
+      "source": "compile_commands",
+      "target": "",
+      "value": "/home/user/workspace/portability_stress_projects/libfreenect/include"
+    },
+    {
+      "category": "absolute_path",
+      "field": "include_path",
+      "message": "Project-local include path in compile_commands.json: /home/user/workspace/portability_stress_projects/libfreenect/src",
+      "recommendation": "This path is within the project source or build tree and is expected.",
+      "severity": "info",
+      "source": "compile_commands",
+      "target": "",
+      "value": "/home/user/workspace/portability_stress_projects/libfreenect/src"
+    },
+    {
+      "category": "cache_variable",
+      "field": "cmake_cache_variable",
+      "message": "Compiler: CMAKE_CXX_COMPILER = /usr/bin/c++",
+      "recommendation": "Ensure this compiler is available on all target build environments.",
+      "severity": "info",
+      "source": "cmake_cache",
+      "target": "",
+      "value": "CMAKE_CXX_COMPILER=/usr/bin/c++"
+    },
+    {
+      "category": "cache_variable",
+      "field": "cmake_cache_variable",
+      "message": "Compiler: CMAKE_C_COMPILER = /usr/bin/cc",
+      "recommendation": "Ensure this compiler is available on all target build environments.",
+      "severity": "info",
+      "source": "cmake_cache",
+      "target": "",
+      "value": "CMAKE_C_COMPILER=/usr/bin/cc"
+    },
+    {
+      "category": "cache_variable",
+      "field": "cmake_cache_variable",
+      "message": "Install prefix: /usr/local",
+      "recommendation": "CMAKE_INSTALL_PREFIX is /usr/local. Ensure this is appropriate for all target environments.",
+      "severity": "info",
+      "source": "cmake_cache",
+      "target": "",
+      "value": "CMAKE_INSTALL_PREFIX=/usr/local"
+    },
+    {
+      "category": "cache_variable",
+      "field": "cmake_cache_variable",
+      "message": "Absolute path variable in CMakeCache: LIBUSB_1_INCLUDE_DIR = /usr/include/libusb-1.0",
+      "recommendation": "Verify this path is consistent across build environments.",
+      "severity": "info",
+      "source": "cmake_cache",
+      "target": "",
+      "value": "LIBUSB_1_INCLUDE_DIR=/usr/include/libusb-1.0"
+    },
+    {
+      "category": "cache_variable",
+      "field": "cmake_cache_variable",
+      "message": "Absolute path variable in CMakeCache: LIBUSB_1_LIBRARY = /usr/lib/x86_64-linux-gnu/libusb-1.0.so",
+      "recommendation": "Verify this path is consistent across build environments.",
+      "severity": "info",
+      "source": "cmake_cache",
+      "target": "",
+      "value": "LIBUSB_1_LIBRARY=/usr/lib/x86_64-linux-gnu/libusb-1.0.so"
+    },
+    {
+      "category": "absolute_path",
+      "field": "include_path",
+      "message": "Project-local absolute include path (resolved BUILD_INTERFACE): /home/user/workspace/portability_stress_projects/libfreenect/include",
+      "recommendation": "This is typical for BUILD_INTERFACE generator expressions and is generally fine. [10 targets: fakenect, fakenect-record, freenect, ...]",
+      "severity": "info",
+      "source": "file_api",
+      "target": "",
+      "value": "/home/user/workspace/portability_stress_projects/libfreenect/include"
+    },
+    {
+      "category": "absolute_path",
+      "field": "include_path",
+      "message": "Project-local absolute include path (resolved BUILD_INTERFACE): /home/user/workspace/portability_stress_projects/libfreenect/fakenect/../src",
+      "recommendation": "This is typical for BUILD_INTERFACE generator expressions and is generally fine. [2 targets: fakenect, fakenect-record]",
+      "severity": "info",
+      "source": "file_api",
+      "target": "",
+      "value": "/home/user/workspace/portability_stress_projects/libfreenect/fakenect/../src"
+    },
+    {
+      "category": "runtime_path",
+      "field": "link_fragment",
+      "message": "Build-tree RPATH detected: -Wl,-rpath,/tmp/anaport_NcePzG/lib:",
+      "recommendation": "This RPATH points inside the build/source directory and is typical for build-tree executables. Verify that CMAKE_INSTALL_RPATH is set correctly for installed binaries. [6 targets: fakenect-record, freenect-camtest, freenect-regtest, ...]",
+      "severity": "info",
+      "source": "file_api",
+      "target": "",
+      "value": "-Wl,-rpath,/tmp/anaport_NcePzG/lib:"
+    },
+    {
+      "category": "absolute_path",
+      "field": "include_path",
+      "message": "Project-local absolute include path (resolved BUILD_INTERFACE): /home/user/workspace/portability_stress_projects/libfreenect/src",
+      "recommendation": "This is typical for BUILD_INTERFACE generator expressions and is generally fine. [2 targets: freenect, freenectstatic]",
+      "severity": "info",
+      "source": "file_api",
+      "target": "",
+      "value": "/home/user/workspace/portability_stress_projects/libfreenect/src"
+    },
+    {
+      "category": "absolute_path",
+      "field": "include_path",
+      "message": "Project-local absolute include path (resolved BUILD_INTERFACE): /home/user/workspace/portability_stress_projects/libfreenect/examples/../wrappers/c_sync",
+      "recommendation": "This is typical for BUILD_INTERFACE generator expressions and is generally fine. [4 targets: freenect-camtest, freenect-regtest, freenect-tiltdemo, freenect-wavrecord]",
+      "severity": "info",
+      "source": "file_api",
+      "target": "",
+      "value": "/home/user/workspace/portability_stress_projects/libfreenect/examples/../wrappers/c_sync"
+    }
+  ],
+  "generated_at": "2026-05-26T22:57:07Z",
+  "project_name": "libfreenect",
+  "source_dir": "/home/user/workspace/portability_stress_projects/libfreenect",
+  "summary": {
+    "dependency_edges": 9,
+    "emitted_findings": 29,
+    "errors": 0,
+    "findings_by_category": {
+      "absolute_path": 15,
+      "cache_variable": 5,
+      "compile_command": 1,
+      "platform_specific_library": 7,
+      "runtime_path": 1
+    },
+    "findings_by_source": {
+      "cmake_cache": 5,
+      "compile_commands": 5,
+      "file_api": 19
+    },
+    "hidden_service_targets": 0,
+    "info": 15,
+    "severity_filter": "info",
+    "total_findings": 29,
+    "total_targets": 11,
+    "warnings": 14
+  },
+  "targets": [
+    {
+      "artifacts": [
+        "lib/fakenect/libfakenect.so"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "fakenect_EXPORTS"
+          ],
+          "includes": [
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/portability_stress_projects/libfreenect/include"
+            },
+            {
+              "is_system": false,
+              "path": "/usr/include/libusb-1.0"
+            },
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/portability_stress_projects/libfreenect/fakenect/../src"
+            }
+          ],
+          "language": "C"
+        }
+      ],
+      "dependencies": [],
+      "id": "fakenect::@ad960db0dfc9b36e43c7",
+      "link_fragments": [
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "-lm",
+          "role": "libraries"
+        }
+      ],
+      "name": "fakenect",
+      "source_dir": "fakenect",
+      "sources": [
+        "fakenect/fakenect.c",
+        "fakenect/parson.c",
+        "src/registration.c"
+      ],
+      "type": "SHARED_LIBRARY"
+    },
+    {
+      "artifacts": [
+        "bin/fakenect-record"
+      ],
+      "compile_groups": [
+        {
+          "defines": [],
+          "includes": [
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/portability_stress_projects/libfreenect/include"
+            },
+            {
+              "is_system": false,
+              "path": "/usr/include/libusb-1.0"
+            },
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/portability_stress_projects/libfreenect/fakenect/../src"
+            }
+          ],
+          "language": "C"
+        }
+      ],
+      "dependencies": [
+        "freenect::@145eef247bfb46b6828c"
+      ],
+      "id": "fakenect-record::@ad960db0dfc9b36e43c7",
+      "link_fragments": [
+        {
+          "fragment": "-Wall -O2",
+          "role": "flags"
+        },
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "-Wl,-rpath,/tmp/anaport_NcePzG/lib:",
+          "role": "libraries"
+        },
+        {
+          "fragment": "../lib/libfreenect.so.0.7.5",
+          "role": "libraries"
+        },
+        {
+          "fragment": "-lm",
+          "role": "libraries"
+        },
+        {
+          "fragment": "/usr/lib/x86_64-linux-gnu/libusb-1.0.so",
+          "role": "libraries"
+        }
+      ],
+      "name": "fakenect-record",
+      "source_dir": "fakenect",
+      "sources": [
+        "fakenect/record.c",
+        "fakenect/parson.c"
+      ],
+      "type": "EXECUTABLE"
+    },
+    {
+      "artifacts": [
+        "lib/libfreenect.so"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "freenect_EXPORTS"
+          ],
+          "includes": [
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/portability_stress_projects/libfreenect/include"
+            },
+            {
+              "is_system": false,
+              "path": "/usr/include/libusb-1.0"
+            },
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/portability_stress_projects/libfreenect/src"
+            }
+          ],
+          "language": "C"
+        }
+      ],
+      "dependencies": [],
+      "id": "freenect::@145eef247bfb46b6828c",
+      "link_fragments": [
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "/usr/lib/x86_64-linux-gnu/libusb-1.0.so",
+          "role": "libraries"
+        }
+      ],
+      "name": "freenect",
+      "source_dir": "src",
+      "sources": [
+        "src/core.c",
+        "src/tilt.c",
+        "src/cameras.c",
+        "src/flags.c",
+        "src/usb_libusb10.c",
+        "src/registration.c",
+        "src/audio.c",
+        "src/loader.c"
+      ],
+      "type": "SHARED_LIBRARY"
+    },
+    {
+      "artifacts": [
+        "bin/freenect-camtest"
+      ],
+      "compile_groups": [
+        {
+          "defines": [],
+          "includes": [
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/portability_stress_projects/libfreenect/include"
+            },
+            {
+              "is_system": false,
+              "path": "/usr/include/libusb-1.0"
+            },
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/portability_stress_projects/libfreenect/examples/../wrappers/c_sync"
+            }
+          ],
+          "language": "C"
+        }
+      ],
+      "dependencies": [
+        "freenect::@145eef247bfb46b6828c"
+      ],
+      "id": "freenect-camtest::@714eac15f71a94114fdf",
+      "link_fragments": [
+        {
+          "fragment": "-Wall -O2",
+          "role": "flags"
+        },
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "-Wl,-rpath,/tmp/anaport_NcePzG/lib:",
+          "role": "libraries"
+        },
+        {
+          "fragment": "../lib/libfreenect.so.0.7.5",
+          "role": "libraries"
+        },
+        {
+          "fragment": "/usr/lib/x86_64-linux-gnu/libusb-1.0.so",
+          "role": "libraries"
+        }
+      ],
+      "name": "freenect-camtest",
+      "source_dir": "examples",
+      "sources": [
+        "examples/camtest.c"
+      ],
+      "type": "EXECUTABLE"
+    },
+    {
+      "artifacts": [
+        "bin/freenect-regtest"
+      ],
+      "compile_groups": [
+        {
+          "defines": [],
+          "includes": [
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/portability_stress_projects/libfreenect/include"
+            },
+            {
+              "is_system": false,
+              "path": "/usr/include/libusb-1.0"
+            },
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/portability_stress_projects/libfreenect/examples/../wrappers/c_sync"
+            }
+          ],
+          "language": "C"
+        }
+      ],
+      "dependencies": [
+        "freenect::@145eef247bfb46b6828c",
+        "freenect_sync::@576f7b6d96029cc094a2"
+      ],
+      "id": "freenect-regtest::@714eac15f71a94114fdf",
+      "link_fragments": [
+        {
+          "fragment": "-Wall -O2",
+          "role": "flags"
+        },
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "-Wl,-rpath,/tmp/anaport_NcePzG/lib:",
+          "role": "libraries"
+        },
+        {
+          "fragment": "../lib/libfreenect_sync.so.0.7.5",
+          "role": "libraries"
+        },
+        {
+          "fragment": "-lm",
+          "role": "libraries"
+        },
+        {
+          "fragment": "../lib/libfreenect.so.0.7.5",
+          "role": "libraries"
+        },
+        {
+          "fragment": "/usr/lib/x86_64-linux-gnu/libusb-1.0.so",
+          "role": "libraries"
+        },
+        {
+          "fragment": "-lpthread",
+          "role": "libraries"
+        }
+      ],
+      "name": "freenect-regtest",
+      "source_dir": "examples",
+      "sources": [
+        "examples/regtest.c"
+      ],
+      "type": "EXECUTABLE"
+    },
+    {
+      "artifacts": [
+        "bin/freenect-tiltdemo"
+      ],
+      "compile_groups": [
+        {
+          "defines": [],
+          "includes": [
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/portability_stress_projects/libfreenect/include"
+            },
+            {
+              "is_system": false,
+              "path": "/usr/include/libusb-1.0"
+            },
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/portability_stress_projects/libfreenect/examples/../wrappers/c_sync"
+            }
+          ],
+          "language": "C"
+        }
+      ],
+      "dependencies": [
+        "freenect::@145eef247bfb46b6828c",
+        "freenect_sync::@576f7b6d96029cc094a2"
+      ],
+      "id": "freenect-tiltdemo::@714eac15f71a94114fdf",
+      "link_fragments": [
+        {
+          "fragment": "-Wall -O2",
+          "role": "flags"
+        },
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "-Wl,-rpath,/tmp/anaport_NcePzG/lib:",
+          "role": "libraries"
+        },
+        {
+          "fragment": "../lib/libfreenect_sync.so.0.7.5",
+          "role": "libraries"
+        },
+        {
+          "fragment": "-lm",
+          "role": "libraries"
+        },
+        {
+          "fragment": "../lib/libfreenect.so.0.7.5",
+          "role": "libraries"
+        },
+        {
+          "fragment": "/usr/lib/x86_64-linux-gnu/libusb-1.0.so",
+          "role": "libraries"
+        },
+        {
+          "fragment": "-lpthread",
+          "role": "libraries"
+        }
+      ],
+      "name": "freenect-tiltdemo",
+      "source_dir": "examples",
+      "sources": [
+        "examples/tiltdemo.c"
+      ],
+      "type": "EXECUTABLE"
+    },
+    {
+      "artifacts": [
+        "bin/freenect-wavrecord"
+      ],
+      "compile_groups": [
+        {
+          "defines": [],
+          "includes": [
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/portability_stress_projects/libfreenect/include"
+            },
+            {
+              "is_system": false,
+              "path": "/usr/include/libusb-1.0"
+            },
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/portability_stress_projects/libfreenect/examples/../wrappers/c_sync"
+            }
+          ],
+          "language": "C"
+        }
+      ],
+      "dependencies": [
+        "freenect::@145eef247bfb46b6828c"
+      ],
+      "id": "freenect-wavrecord::@714eac15f71a94114fdf",
+      "link_fragments": [
+        {
+          "fragment": "-Wall -O2",
+          "role": "flags"
+        },
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "-Wl,-rpath,/tmp/anaport_NcePzG/lib:",
+          "role": "libraries"
+        },
+        {
+          "fragment": "../lib/libfreenect.so.0.7.5",
+          "role": "libraries"
+        },
+        {
+          "fragment": "/usr/lib/x86_64-linux-gnu/libusb-1.0.so",
+          "role": "libraries"
+        }
+      ],
+      "name": "freenect-wavrecord",
+      "source_dir": "examples",
+      "sources": [
+        "examples/wavrecord.c"
+      ],
+      "type": "EXECUTABLE"
+    },
+    {
+      "artifacts": [
+        "lib/libfreenect_sync.so"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "freenect_sync_EXPORTS"
+          ],
+          "includes": [
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/portability_stress_projects/libfreenect/include"
+            },
+            {
+              "is_system": false,
+              "path": "/usr/include/libusb-1.0"
+            }
+          ],
+          "language": "C"
+        }
+      ],
+      "dependencies": [
+        "freenect::@145eef247bfb46b6828c"
+      ],
+      "id": "freenect_sync::@576f7b6d96029cc094a2",
+      "link_fragments": [
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "-Wl,-rpath,/tmp/anaport_NcePzG/lib:",
+          "role": "libraries"
+        },
+        {
+          "fragment": "../../lib/libfreenect.so.0.7.5",
+          "role": "libraries"
+        },
+        {
+          "fragment": "-lpthread",
+          "role": "libraries"
+        },
+        {
+          "fragment": "/usr/lib/x86_64-linux-gnu/libusb-1.0.so",
+          "role": "libraries"
+        }
+      ],
+      "name": "freenect_sync",
+      "source_dir": "wrappers/c_sync",
+      "sources": [
+        "wrappers/c_sync/libfreenect_sync.c"
+      ],
+      "type": "SHARED_LIBRARY"
+    },
+    {
+      "artifacts": [
+        "lib/libfreenect_sync.a"
+      ],
+      "compile_groups": [
+        {
+          "defines": [],
+          "includes": [
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/portability_stress_projects/libfreenect/include"
+            },
+            {
+              "is_system": false,
+              "path": "/usr/include/libusb-1.0"
+            }
+          ],
+          "language": "C"
+        }
+      ],
+      "dependencies": [
+        "freenect::@145eef247bfb46b6828c"
+      ],
+      "id": "freenect_sync_static::@576f7b6d96029cc094a2",
+      "link_fragments": [],
+      "name": "freenect_sync_static",
+      "source_dir": "wrappers/c_sync",
+      "sources": [
+        "wrappers/c_sync/libfreenect_sync.c"
+      ],
+      "type": "STATIC_LIBRARY"
+    },
+    {
+      "artifacts": [
+        "lib/libfreenect.a"
+      ],
+      "compile_groups": [
+        {
+          "defines": [],
+          "includes": [
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/portability_stress_projects/libfreenect/include"
+            },
+            {
+              "is_system": false,
+              "path": "/usr/include/libusb-1.0"
+            },
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/portability_stress_projects/libfreenect/src"
+            }
+          ],
+          "language": "C"
+        }
+      ],
+      "dependencies": [],
+      "id": "freenectstatic::@145eef247bfb46b6828c",
+      "link_fragments": [],
+      "name": "freenectstatic",
+      "source_dir": "src",
+      "sources": [
+        "src/core.c",
+        "src/tilt.c",
+        "src/cameras.c",
+        "src/flags.c",
+        "src/usb_libusb10.c",
+        "src/registration.c",
+        "src/audio.c",
+        "src/loader.c"
+      ],
+      "type": "STATIC_LIBRARY"
+    },
+    {
+      "artifacts": [],
+      "compile_groups": [],
+      "dependencies": [],
+      "id": "uninstall::@6890427a1f51a3e7e1df",
+      "link_fragments": [],
+      "name": "uninstall",
+      "source_dir": ".",
+      "sources": [
+        "/tmp/anaport_NcePzG/CMakeFiles/uninstall",
+        "/tmp/anaport_NcePzG/CMakeFiles/uninstall.rule"
+      ],
+      "type": "UTILITY"
+    }
+  ],
+  "tool": "analyze-portability",
+  "tool_version": "1.1.0"
+}

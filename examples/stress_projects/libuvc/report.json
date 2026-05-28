@@ -1,0 +1,323 @@
+{
+  "cmake_version": "3.31.6",
+  "data_sources": {
+    "cmake_cache": {
+      "found": true,
+      "interesting_variables": 61,
+      "parsed": true,
+      "variable_count": 218
+    },
+    "compile_commands": {
+      "entry_count": 19,
+      "found": true,
+      "observations": 67,
+      "parsed": true
+    }
+  },
+  "dependency_edges": [
+    {
+      "from": "example",
+      "kind": "internal",
+      "to": "uvc"
+    }
+  ],
+  "findings": [
+    {
+      "category": "runtime_path",
+      "field": "link_fragment",
+      "message": "Build-tree RPATH detected: -Wl,-rpath,/tmp/anaport_7ehI2W",
+      "recommendation": "This RPATH points inside the build/source directory and is typical for build-tree executables. Verify that CMAKE_INSTALL_RPATH is set correctly for installed binaries.",
+      "severity": "info",
+      "source": "file_api",
+      "target": "example",
+      "value": "-Wl,-rpath,/tmp/anaport_7ehI2W"
+    },
+    {
+      "category": "absolute_path",
+      "field": "link_library",
+      "message": "Absolute path to library (possibly project-local): /usr/lib/x86_64-linux-gnu/libusb-1.0.so",
+      "recommendation": "Ensure this path is valid on all target systems.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "uvc",
+      "value": "/usr/lib/x86_64-linux-gnu/libusb-1.0.so"
+    },
+    {
+      "category": "absolute_path",
+      "field": "link_library",
+      "message": "Absolute path to library (possibly project-local): /usr/lib/x86_64-linux-gnu/libjpeg.so",
+      "recommendation": "Ensure this path is valid on all target systems.",
+      "severity": "warning",
+      "source": "file_api",
+      "target": "uvc",
+      "value": "/usr/lib/x86_64-linux-gnu/libjpeg.so"
+    },
+    {
+      "category": "compile_command",
+      "field": "compile_flag",
+      "message": "Non-portable compile flag in compile_commands.json: -fPIC",
+      "recommendation": "Check portability on all target platforms.",
+      "severity": "info",
+      "source": "compile_commands",
+      "target": "",
+      "value": "-fPIC"
+    },
+    {
+      "category": "absolute_path",
+      "field": "include_path",
+      "message": "Project-local include path in compile_commands.json: /home/user/workspace/portability_stress_projects/libuvc/include",
+      "recommendation": "This path is within the project source or build tree and is expected.",
+      "severity": "info",
+      "source": "compile_commands",
+      "target": "",
+      "value": "/home/user/workspace/portability_stress_projects/libuvc/include"
+    },
+    {
+      "category": "absolute_path",
+      "field": "include_path",
+      "message": "Project-local include path in compile_commands.json: /tmp/anaport_7ehI2W/include",
+      "recommendation": "This path is within the project source or build tree and is expected.",
+      "severity": "info",
+      "source": "compile_commands",
+      "target": "",
+      "value": "/tmp/anaport_7ehI2W/include"
+    },
+    {
+      "category": "cache_variable",
+      "field": "cmake_cache_variable",
+      "message": "Compiler: CMAKE_C_COMPILER = /usr/bin/cc",
+      "recommendation": "Ensure this compiler is available on all target build environments.",
+      "severity": "info",
+      "source": "cmake_cache",
+      "target": "",
+      "value": "CMAKE_C_COMPILER=/usr/bin/cc"
+    },
+    {
+      "category": "cache_variable",
+      "field": "cmake_cache_variable",
+      "message": "Install prefix: /usr/local",
+      "recommendation": "CMAKE_INSTALL_PREFIX is /usr/local. Ensure this is appropriate for all target environments.",
+      "severity": "info",
+      "source": "cmake_cache",
+      "target": "",
+      "value": "CMAKE_INSTALL_PREFIX=/usr/local"
+    },
+    {
+      "category": "cache_variable",
+      "field": "cmake_cache_variable",
+      "message": "Absolute path variable in CMakeCache: JPEG_INCLUDE_DIR = /usr/include",
+      "recommendation": "Verify this path is consistent across build environments.",
+      "severity": "info",
+      "source": "cmake_cache",
+      "target": "",
+      "value": "JPEG_INCLUDE_DIR=/usr/include"
+    },
+    {
+      "category": "cache_variable",
+      "field": "cmake_cache_variable",
+      "message": "Absolute path variable in CMakeCache: LibUSB_LIBRARY = /usr/lib/x86_64-linux-gnu/libusb-1.0.so",
+      "recommendation": "Verify this path is consistent across build environments.",
+      "severity": "info",
+      "source": "cmake_cache",
+      "target": "",
+      "value": "LibUSB_LIBRARY=/usr/lib/x86_64-linux-gnu/libusb-1.0.so"
+    },
+    {
+      "category": "absolute_path",
+      "field": "include_path",
+      "message": "Project-local absolute include path (resolved BUILD_INTERFACE): /tmp/anaport_7ehI2W/include",
+      "recommendation": "This is typical for BUILD_INTERFACE generator expressions and is generally fine. [3 targets: example, uvc, uvc_static]",
+      "severity": "info",
+      "source": "file_api",
+      "target": "",
+      "value": "/tmp/anaport_7ehI2W/include"
+    },
+    {
+      "category": "absolute_path",
+      "field": "include_path",
+      "message": "Project-local absolute include path (resolved BUILD_INTERFACE): /home/user/workspace/portability_stress_projects/libuvc/include",
+      "recommendation": "This is typical for BUILD_INTERFACE generator expressions and is generally fine. [3 targets: example, uvc, uvc_static]",
+      "severity": "info",
+      "source": "file_api",
+      "target": "",
+      "value": "/home/user/workspace/portability_stress_projects/libuvc/include"
+    }
+  ],
+  "generated_at": "2026-05-26T22:57:12Z",
+  "project_name": "libuvc",
+  "source_dir": "/home/user/workspace/portability_stress_projects/libuvc",
+  "summary": {
+    "dependency_edges": 1,
+    "emitted_findings": 12,
+    "errors": 0,
+    "findings_by_category": {
+      "absolute_path": 6,
+      "cache_variable": 4,
+      "compile_command": 1,
+      "runtime_path": 1
+    },
+    "findings_by_source": {
+      "cmake_cache": 4,
+      "compile_commands": 3,
+      "file_api": 5
+    },
+    "hidden_service_targets": 0,
+    "info": 10,
+    "severity_filter": "info",
+    "total_findings": 12,
+    "total_targets": 3,
+    "warnings": 2
+  },
+  "targets": [
+    {
+      "artifacts": [
+        "example"
+      ],
+      "compile_groups": [
+        {
+          "defines": [],
+          "includes": [
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/portability_stress_projects/libuvc/include"
+            },
+            {
+              "is_system": false,
+              "path": "/tmp/anaport_7ehI2W/include"
+            }
+          ],
+          "language": "C"
+        }
+      ],
+      "dependencies": [
+        "uvc::@6890427a1f51a3e7e1df"
+      ],
+      "id": "example::@6890427a1f51a3e7e1df",
+      "link_fragments": [
+        {
+          "fragment": "-O3 -DNDEBUG",
+          "role": "flags"
+        },
+        {
+          "fragment": "-rdynamic",
+          "role": "flags"
+        },
+        {
+          "fragment": "-Wl,-rpath,/tmp/anaport_7ehI2W",
+          "role": "libraries"
+        },
+        {
+          "fragment": "libuvc.so.0.0.7",
+          "role": "libraries"
+        }
+      ],
+      "name": "example",
+      "source_dir": ".",
+      "sources": [
+        "src/example.c"
+      ],
+      "type": "EXECUTABLE"
+    },
+    {
+      "artifacts": [
+        "libuvc.so"
+      ],
+      "compile_groups": [
+        {
+          "defines": [
+            "uvc_EXPORTS"
+          ],
+          "includes": [
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/portability_stress_projects/libuvc/include"
+            },
+            {
+              "is_system": false,
+              "path": "/tmp/anaport_7ehI2W/include"
+            },
+            {
+              "is_system": true,
+              "path": "/usr/include/libusb-1.0"
+            }
+          ],
+          "language": "C"
+        }
+      ],
+      "dependencies": [],
+      "id": "uvc::@6890427a1f51a3e7e1df",
+      "link_fragments": [
+        {
+          "fragment": "",
+          "role": "flags"
+        },
+        {
+          "fragment": "/usr/lib/x86_64-linux-gnu/libusb-1.0.so",
+          "role": "libraries"
+        },
+        {
+          "fragment": "/usr/lib/x86_64-linux-gnu/libjpeg.so",
+          "role": "libraries"
+        }
+      ],
+      "name": "uvc",
+      "source_dir": ".",
+      "sources": [
+        "src/ctrl.c",
+        "src/ctrl-gen.c",
+        "src/device.c",
+        "src/diag.c",
+        "src/frame.c",
+        "src/init.c",
+        "src/stream.c",
+        "src/misc.c",
+        "src/frame-mjpeg.c"
+      ],
+      "type": "SHARED_LIBRARY"
+    },
+    {
+      "artifacts": [
+        "libuvc.a"
+      ],
+      "compile_groups": [
+        {
+          "defines": [],
+          "includes": [
+            {
+              "is_system": false,
+              "path": "/home/user/workspace/portability_stress_projects/libuvc/include"
+            },
+            {
+              "is_system": false,
+              "path": "/tmp/anaport_7ehI2W/include"
+            },
+            {
+              "is_system": true,
+              "path": "/usr/include/libusb-1.0"
+            }
+          ],
+          "language": "C"
+        }
+      ],
+      "dependencies": [],
+      "id": "uvc_static::@6890427a1f51a3e7e1df",
+      "link_fragments": [],
+      "name": "uvc_static",
+      "source_dir": ".",
+      "sources": [
+        "src/ctrl.c",
+        "src/ctrl-gen.c",
+        "src/device.c",
+        "src/diag.c",
+        "src/frame.c",
+        "src/init.c",
+        "src/stream.c",
+        "src/misc.c",
+        "src/frame-mjpeg.c"
+      ],
+      "type": "STATIC_LIBRARY"
+    }
+  ],
+  "tool": "analyze-portability",
+  "tool_version": "1.1.0"
+}

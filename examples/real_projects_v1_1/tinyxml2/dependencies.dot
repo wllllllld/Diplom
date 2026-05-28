@@ -1,0 +1,10 @@
+// analyze-portability: dependency graph for project 'tinyxml2'
+digraph dependencies {
+  graph [rankdir=LR, label="tinyxml2 — Dependency Graph", fontsize=14];
+  node [shape=box, style=filled, fontname="Helvetica"];
+
+  "tinyxml2" [label="tinyxml2\n[STATIC_LIBRARY]", fillcolor="lightgreen"];
+  "xmltest" [label="xmltest\n[EXECUTABLE]", fillcolor="lightblue"];
+
+  "xmltest" -> "tinyxml2";
+}
